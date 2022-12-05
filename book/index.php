@@ -1,4 +1,3 @@
-<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -22,10 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
-    <?php if(isset($_SESSION['success'])){
-            echo $_SESSION['success'];
-            unset($_SESSION['success']);
-        } ?>
+    
 </head>
 
 <body>
@@ -46,7 +42,7 @@
                                     <p class="hero-para ms-2">Join with <span class="fw-bold">4600+ Publishers </span>and start <br> getting feedbacks right now </p>
                                 </div>
 
-                                <button class="btn-theme-primary" type="submit">Get a free quote</button>
+                                <button class="btn-theme-primary" type="submit" onclick="window.open('contact.php')">Get a free quote</button>
                                 <button class="btn" type="submit"><i class="bi bi-arrow-up-right"></i> Learn more</button>
                             </div>
                             <div class="col-lg-4 form-col d-none d-md-none d-sm-none d-lg-block card-body-border-gradient">
@@ -140,8 +136,9 @@
                                     necessary to help you with your book.
                                 </p>
                                 <div>
-                                    <a class="btn btn-dark" href="#">Get a free quote</a>
-                                    <a class="btn btn-theme-outlined " href="#">Live chat</a>
+                                    <a class="btn btn-dark" href="contact.php">Get a free quote</a>
+                                    <!-- <a class="btn btn-theme-outlined " href="https://tawk.to/chat/637cb7e0daff0e1306d8cb72/1gifishks" tabindex="0">Live chat</a> -->
+                                    <button class="btn btn-theme-outlined" data-test-label="live-chat-button" onclick="window.open('https://tawk.to/chat/637cb7e0daff0e1306d8cb72/1gifishks','share-live-chat','width=350, height=520'); return false;">Live chat</button>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +158,7 @@
                             <p class="section-text text-white">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
                             <p class="section-text text-white">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
                             <div>
-                                <a class="btn-theme-outlined text-black" href="#">Get a free quote</a>
+                                <a class="btn-theme-outlined text-black" href="contact.php">Get a free quote</a>
                             </div>
                         </div>
                     </div>
@@ -276,8 +273,8 @@
                             <h3>Try it for free</h3>
                             <p >We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start.</p>
                             <div>
-                                <a class="btn btn-dark" href="">Get a free quote</a>
-                                <a class="btn btn-theme-outlined" href="">Live chat</a>
+                                <a class="btn btn-dark" href="contact.php">Get a free quote</a>
+                                <button class="btn btn-theme-outlined" data-test-label="live-chat-button" onclick="window.open('https://tawk.to/chat/637cb7e0daff0e1306d8cb72/1gifishks','share-twitter','width=350, height=520'); return false;">Live chat</button>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block ps-3 text-end">
@@ -295,7 +292,7 @@
                             <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
                             <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
                             <div>
-                                <a class="btn-theme-outlined" href="#">Get a free quote</a>
+                                <a class="btn-theme-outlined" href="contact.php">Get a free quote</a>
                             </div>
                         </div>
                         <div class="col-lg-6 d-none d-sm-none d-lg-block d-md-block text-end">
@@ -373,7 +370,7 @@
                             <div class="col-12">
                                 <h1>It’s Time to Get ReadyAnd Take Your <br>Aspirations To a Whole Different Level</h1>
                                 <div>
-                                    <a class="btn btn-dark" href="#">Get a free quote</a>
+                                    <a class="btn btn-dark" href="contact.php">Get a free quote</a>
                                 </div>
                             </div>
                         </div>
@@ -411,7 +408,7 @@
                             <a class="btn services-btn"><img src="assets/Group 22.png" /> Self Help</a>
                             <a class="btn services-btn"><img src="assets/Group 22.png" /> Science Fiction</a>
 
-                            <p class="pt-5">Do you think we’re missing something? <a href="#">Contact Us</a></p>
+                            <p class="pt-5">Do you think we’re missing something? <a href="contact.php">Contact Us</a></p>
                         </div>
 
                         <div class="col-lg-5 col-md-5 pt-5 service-img d-none d-lg-block d-md-block d-sm-none">
@@ -510,7 +507,7 @@
                             <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
                             <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
                             <div>
-                                <a class="btn-theme-outlined text-black" href="#">Get a free quote</a>
+                                <a class="btn-theme-outlined text-black" href="contact.php">Get a free quote</a>
                             </div>
                         </div>
                     </div>
@@ -526,7 +523,7 @@
                             <h1 class=" my-4 text-lg-center text-start">Did You Dream of Becoming the Next Bestseller? We Will Make Your Dreams Come True</h1>
                             <p class=" my-4 justify-text text-lg-center text-start">We are a full-service book publishing agency that has helped authors from all over the world achieve their publishing goals. If you have a story that you’d like to transform into e-book, you’ve just landed the right place.</p>
                             <div class="text-lg-center text-start my-4">
-                                <a class="btn btn-dark " href="#">Get a free quote</a>
+                                <a class="btn btn-dark " href="contact.php">Get a free quote</a>
                             </div>
                             <h6 class=" my-4 text-lg-center text-start">Join over 200+ people already using megabookwriting</h6>
                         </div>

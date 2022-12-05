@@ -33,7 +33,7 @@ if(isset($_POST['services_btn'])){
                   swal("success !","Your message has been sent successfully", "success",{buttons: {text:"Close"},timer: 3000,});
                 }, 100);
               </script>';
-        header('Location: index.php');
+        header('Location: thankyou.php');
     }
 }
 
@@ -69,7 +69,7 @@ if(isset($_POST['contact'])){
                   swal("success !","Your message has been sent successfully", "success",{buttons: {text:"Close"},timer: 3000,});
                 }, 100);
               </script>';
-        header('Location: index.php');
+        header('Location: thankyou.php');
     }
 }
 ?>
