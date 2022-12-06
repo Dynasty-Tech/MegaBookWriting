@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -22,34 +22,49 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
-    <?php if(isset($_SESSION['success'])){
-            echo $_SESSION['success'];
-            unset($_SESSION['success']);
-        } ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../megabookwriting/css/beeta-owl.carousel.min.css">
+    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.css">
+    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.default.min.css">
+    <script src="../megabookwriting/js/beeta-owl.carousel.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <?php if (isset($_SESSION['success'])) {
+        echo $_SESSION['success'];
+        unset($_SESSION['success']);
+    } ?>
 </head>
 
+
 <body>
-    <?php include('nav.php'); ?>
+
     <main>
         <div class="wrapper">
-
+            <?php include('nav.php'); ?>
             <!-- header -->
             <section class="hero-section section-margin-y">
                 <div class="container-fluid">
                     <div class="container">
                         <div class="row align-items-center justify-content-between">
-                            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-7 px-3 py-5" style="max-width:665px;">
+                            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-7 px-3 py-5" style="max-width:665px;" data-aos="fade-right">
                                 <h1 class="hero-text">With the help of our impeccable book writing services, become the next big thing.</h1>
-                                <p class="hero-para mt-4" >We know writing a book that people will love to read isn’t as easy as it may seem. Our experienced yet creative book writer works round the clock to transform your story into your legacy!</p>
+                                <p class="hero-para mt-4">We know writing a book that people will love to read isn’t as easy as it may seem. Our experienced yet creative book writer works round the clock to transform your story into your legacy!</p>
                                 <div class="d-flex mt-4">
                                     <img src="assets/publishers.png" height="53" />
                                     <p class="hero-para ms-2">Join with <span class="fw-bold">4600+ Publishers </span>and start <br> getting feedbacks right now </p>
                                 </div>
 
-                                <button class="btn-theme-primary" type="submit">Get a free quote</button>
-                                <button class="btn" type="submit"><i class="bi bi-arrow-up-right"></i> Learn more</button>
+                                <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
+                                <a class="btn" type="submit" href="contact.php"><i class="bi bi-arrow-up-right"></i> Learn more</a>
                             </div>
-                            <div class="col-lg-4 form-col d-none d-md-none d-sm-none d-lg-block card-body-border-gradient">
+                            <div class="col-lg-4 form-col d-none d-md-none d-sm-none d-lg-block card-body-border-gradient" data-aos="fade-up">
                                 <form method="POST" action="mails.php">
                                     <p class="form-text">One step closer to become the best!</p>
                                     <div class="mb-3">
@@ -63,9 +78,9 @@
                                     <div class="mb-3">
                                         <input type="numbers" class="form-control" id="exampleInputnumber" placeholder="Phone Number" name="phoneNumbar" required>
                                     </div>
-                                    <p >Do you have a manuscript that is ready to publish? </p>
+                                    <p>Do you have a manuscript that is ready to publish? </p>
                                     <div class="mb-3 col-lg-start">
-                                    <select class="btn btn-transparent border w-100 text-start" name="services" required>
+                                        <select class="btn btn-transparent border w-100 text-start" name="services" required>
                                             <option class="dropdown-item " value="">Select</option>
                                             <option class="dropdown-item" value="Action">Action</option>
                                             <option class="dropdown-item" value="Another action">Another action</option>
@@ -107,8 +122,8 @@
                 <div class="container-fluid section-margin-y">
                     <div class="container ">
                         <div class="row justify-content-between">
-                            <div class="col-lg-6 img-col d-none d-lg-block d-sm-none d-md-none"></div>
-                            <div class="col-lg-6 d-md-12 d-sm-12 ps-3 ">
+                            <div class="col-lg-6 img-col offers d-none d-lg-block d-sm-none d-md-none" data-aos="fade-right"></div>
+                            <div class="col-lg-6 d-md-12 d-sm-12 ps-3 " data-aos="fade-left">
                                 <h6 class="section-subtitle">Mega book writing</h6>
                                 <h1 class="section-title">
                                     Entrust Our Professionals & Become A Well-Recognized Author
@@ -140,7 +155,7 @@
                                     necessary to help you with your book.
                                 </p>
                                 <div>
-                                    <a class="btn btn-dark" href="#">Get a free quote</a>
+                                    <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
                                     <a class="btn btn-theme-outlined " href="#">Live chat</a>
                                 </div>
                             </div>
@@ -152,164 +167,71 @@
             <section class="section-margin-y">
                 <div class="conatiner-fluid bg-light-section">
                     <div class="container p-5">
-                    <div class="row p-3">
-                        <div class="col-lg-6 d-none d-sm-none d-lg-block d-md-block">
-                            <img src="assets/section-content-photo-1.png" />
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6">
-                            <h1 class="section-1-heading-h1">We Give Your Book the New Heights it Deserves</h1>
-                            <p class="section-text text-white">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
-                            <p class="section-text text-white">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
-                            <div>
-                                <a class="btn-theme-outlined text-black" href="#">Get a free quote</a>
+                        <div class="row p-3">
+
+                            <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-left">
+                                <h1 class="section-1-heading-h1">We Give Your Book the New Heights it Deserves</h1>
+                                <p class="section-text text-white">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
+                                <p class="section-text text-white">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
+                                <div>
+                                    <a class="btn btn-theme-outlined-light text-white" type="submit" href="contact.php">Get a free quote</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 index-image-section-3 d-none d-sm-none d-lg-block d-md-block" data-aos="fade-right">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-                
+
             </section>
             <!--Services -->
-            <section class="section-margin-y">
-                <div class="container">
-                    <div class="row px-3">
-                        <div class="col-sm-12 col-md-12 col-lg-12 text-start text-lg-center">
-                            <h6 class="">Mega Services</h6>
-                            <h1 class="">One-Stop Solution to All Your Ghostwriting Needs</h1>
-                            <p class="section-text text-lg-center">We understand how important it is for you to have your ideas, thoughts, and imagination conveyed the way you want it. Sometimes, it is difficult to put your thoughts into words, especially if you are not a professional writer. So, why gamble with your ideas? Let us take care of your ghostwriting needs. Our writers work alongside with the editors and publishing house to deliver flawless projects within the deadline and to cater at every way possible.</p>
-                            <a class="btn btn-theme-outlined " type="submit"><i class="bi bi-arrow-up-right"></i> Learn more</a>
-                        </div>
-                    </div>
+            <?php include('common/services.php'); ?>
 
-                    <div class="row justify-content-center my-3">
-                        <div class="col-lg-3 col-md-6 col-sm-12  mx-2 my-2">
-                            <!--CARDS-->
-                            <div class="card custom-card-height">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
-                                        <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z" />
-                                    </svg>
-                                    <h6> Ghostwriting</h6>
-                                    <p class="section-text">We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality..</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 mx-2 my-2">
-                            <!--CARDS-->
-                            <div class="card custom-card-height">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
-                                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
-                                        <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z" />
-                                    </svg>
-                                    <h5>Editing</h5>
-                                    <p class="section-text">We’ll ensure that your book is consistent with the chosen style guide and ensure that your book is formatted correctly for printing. Whilst we edit your work, we’ll catch errors in spelling, grammar, and style..</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12  mx-2 my-2">
-                            <!--CARDS-->
-                            <div class="card custom-card-height">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
-                                        <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0zM2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z" />
-                                    </svg>
-                                    <h5>Marketing</h5>
-                                    <p class="section-text">Our experts marketers will help you get your book the attention it deserves. We will ensure that your book is marketed in all the right places and that it gets in front of the right people.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center my-0 py-0">
-                        <div class="col-lg-3 col-md-6 col-sm-12  mx-2 my-2">
-                            <!--CARDS-->
-                            <div class="card custom-card-height">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
-                                        <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
-                                        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
-                                    </svg>
-                                    <h5>Illustration</h5>
-                                    <p class="section-text">We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12  mx-2 my-2">
-                            <!--CARDS-->
-                            <div class="card custom-card-height">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
-                                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
-                                        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
-                                    </svg>
-                                    <h5>Audio Book</h5>
-                                    <p class="section-text">We’ll ensure that your book is consistent with the chosen style guide and ensure that your book is formatted correctly for printing. Whilst we edit your work, we’ll catch errors in spelling, grammar, and style..</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12  mx-2 my-2">
-                            <!--CARDS-->
-                            <div class="card custom-card-height">
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" />
-                                    </svg>
-                                    <h5>Publication</h5>
-                                    <p class="section-text">Our experts marketers will help you get your book the attention it deserves. We will ensure that your book is marketed in all the right places and that it gets in front of the right people.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!--Banners-->
             <section class="section-margin-y">
                 <div class="container p-3 d-block banner">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-lg-6 col-md-6 col-sm-12 text-lg-center text-sm-start">
+                    <div class="row align-items-center justify-content-center px-5">
+                        <div class="col-lg-6 col-md-6 col-sm-12 text-lg-start text-sm-start">
                             <h3>Try it for free</h3>
-                            <p >We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start.</p>
+                            <p>We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start.</p>
                             <div>
-                                <a class="btn btn-dark" href="">Get a free quote</a>
+                                <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
                                 <a class="btn btn-theme-outlined" href="">Live chat</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block ps-3 text-end">
-                            <img src="assets/student.png " width="250" />
+                            <img src="assets/why-choose-us-animated-img1.png " width="400" />
                         </div>
                     </div>
                 </div>
             </section>
             <!--Section Content Reversed-->
             <section class="section-margin-y">
-                <div class="container bg-light">
-                    <div class="row p-3">
-                        <div class="col-sm-12 col-md-6 col-lg-6">
-                            <h1>We Give Your Book the New Heights it Deserves</h1>
-                            <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
-                            <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
-                            <div>
-                                <a class="btn-theme-outlined" href="#">Get a free quote</a>
+                <div class="container-fluid bg-light">
+                    <div class="container p-5">
+                        <div class="row p-3">
+                            <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-down-left">
+                                <h1>We Give Your Book the New Heights it Deserves</h1>
+                                <p class="section-text ">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
+                                <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
+                                <div>
+                                    <a class="btn-theme-outlined" href="contact.php">Get a free quote</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 d-none d-sm-none d-lg-block d-md-block text-end">
-                            <img src="assets/section-content-photo-1.png"/>
-                        </div>
+                            <div class="col-lg-6 d-none d-sm-none d-lg-block d-md-block text-end" data-aos="fade-down-right">
+                                <img src="assets/book.jpg" width="600" height="500" />
+                            </div>
 
+                        </div>
                     </div>
                 </div>
+
             </section>
             <!-- Numbers -->
             <section class="percentage-section section-margin-y">
                 <div class="container">
                     <div class="row justify-content-center">
-                      <div class="col-lg-12 col-sm-12 col-md container-percentage">
+                        <div class="col-lg-12 col-sm-12 col-md container-percentage">
                             <h1 class="text-lg-center text-sm-start">We Amplify Your Story with Our Creativity</h1>
                             <ul class="list-group list-group-horizontal justify-content-center">
                                 <li class="list-item">
@@ -340,24 +262,26 @@
                 </div>
             </section>
             <!--Section Content Centered-->
-            <section class="section-margin-y">
-                <div class="container bg-light text-center">
-                    <div class="row p-4">
-                        <div class="col-sm-12 col-md-12 col-lg-12 text-start text-lg-center">
-                            <h1>We Give Your Book the New Heights it Deserves</h1>
-                            <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
-                           
-                        </div>
-                    </div>
-                    <div class="row d-none d-lg-block d-md-block">
-                        <div class="col-lg-12"><img src="assets/section-content-photo-1.png" width="550" height="300"/>
-                        </div>
+            <section class="section-margin-y d-none">
+                <div class="container-fluid bg-light">
+                    <div class="container p-5 text-center">
+                        <div class="row p-3">
+                            <div class="col-sm-12 col-md-12 col-lg-12 text-start text-lg-center">
+                                <h1>We Give Your Book the New Heights it Deserves</h1>
+                                <p class="section-text ">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
 
+                            </div>
+                        </div>
+                        <div class="row d-none d-lg-block d-md-block">
+                            <div class="col-lg-12"><img src="assets/reading.jpg" width="650" height="300" />
+                            </div>
+
+                        </div>
+                        <br>
                     </div>
-                    <br>
                 </div>
-            </section>
 
+            </section>
             <!-- Banner 2 -->
             <section class="section-margin-y">
                 <div class="container p-3 d-block banner">
@@ -371,14 +295,15 @@
                         </div>
                         <div class="row text-center">
                             <div class="col-12">
-                                <h1>It’s Time to Get ReadyAnd Take Your <br>Aspirations To a Whole Different Level</h1>
+                                <h1>It’s Time to Get ReadyAnd Take Your <br>Aspirations To a Whole Different Level</h1><br>
                                 <div>
-                                    <a class="btn btn-dark" href="#">Get a free quote</a>
+                                    <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
                                 </div>
                             </div>
                         </div>
 
-                    </div>
+
+                    </div><br><br>
                 </div>
             </section>
             <!--Offerings-->
@@ -388,33 +313,34 @@
                         <div class="col-lg-7 col-md-12 col-sm-12">
                             <h6 class="pt-5">MEGA OFFERS</h6>
                             <h1>We Capturing Your Story, Exactly As You Want it Captured</h1>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Action Adventure</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> health/Fitness</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Art/Architecture</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Fantasy</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Autobiography</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> History</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Biography</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Novel</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Business/Economics</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Historical Fiction</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Children</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Romance</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Cook Book</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Memoir</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Comic Book</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Picture Book</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Encyclopedia</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Poetry</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Drama</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Political Thiller</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Self Help</a>
-                            <a class="btn services-btn"><img src="assets/Group 22.png" /> Science Fiction</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Action Adventure</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> health/Fitness</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Art/Architecture</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Fantasy</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Autobiography</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> History</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Biography</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Novel</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Business/Economics</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Historical Fiction</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Children</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Romance</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Cook Book</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Memoir</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Comic Book</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Picture Book</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Encyclopedia</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Poetry</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Drama</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Political Thiller</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Self Help</a>
+                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Science Fiction</a>
 
-                            <p class="pt-5">Do you think we’re missing something? <a href="#">Contact Us</a></p>
+                            <p class="pt-5">Do you think we’re missing something? <a href="contact.php">Contact Us</a></p>
                         </div>
 
-                        <div class="col-lg-5 col-md-5 pt-5 service-img d-none d-lg-block d-md-block d-sm-none">
+                        <div class="col-lg-5 col-md-5 pt-5  d-none d-lg-block d-md-block d-sm-none">
+                            <img src="assets/offers.jpg" width="600" height="500" />
 
                         </div>
                     </div>
@@ -422,99 +348,28 @@
             </section>
 
             <!--Process-->
-            <section class="section-margin-y">
-                <div class="container">
-                    <div class="row">
-                        <h6 class="text-lg-center text-sm-start">How we do it</h6>
-                        <h1 class="text-lg-center text-sm-start">Our Working Process</h1>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
-                            <!--CARDS-->
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
-                                        <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z" />
-                                    </svg>
-                                    <h6>Book Assessment</h6>
-                                    <p class="card-text">We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
-                            <!--CARDS-->
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
-                                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
-                                        <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z" />
-                                    </svg>
-                                    <h6>Book Outline</h6>
-                                    <p class="card-text">We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
-                            <!--CARDS-->
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
-                                        <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0zM2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z" />
-                                    </svg>
-                                    <h6>Writing and Editing</h6>
-                                    <p class="card-text">We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
-                            <!--CARDS-->
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
-                                        <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
-                                        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
-                                    </svg>
-                                    <h6>Proofreading</h6>
-                                    <p class="card-text">We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6 col-sm-12 mt-5 border-0 ">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <h5 class="section-title">Publication</h5>
-                                    <p class="section-text">Once your book is formatted, we will help you publish it. We can publish it on Amazon Kindle or create a print-on-demand version.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </section>
+            <?php include('common/process.php'); ?>
 
             <!--Section Content 2-->
             <section class="section-margin-y">
-                <div class="container bg-light">
-                    <div class="row p-3">
-                        <div class="col-lg-6 d-none d-sm-none d-lg-block d-md-block">
-                            <img src="assets/section-content-photo-1.png" />
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6">
-                            <h1>We Give Your Book the New Heights it Deserves</h1>
-                            <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
-                            <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
-                            <div>
-                                <a class="btn-theme-outlined text-black" href="#">Get a free quote</a>
+                <div class="container-fluid">
+                    <div class="container ">
+                        <div class="row p-3">
+                            <div class="col-lg-6 d-none d-sm-none d-lg-block d-md-block">
+                                <img src="assets/section1.jpg" width="500" height="600" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 pt-5">
+                                <h1>We Give Your Book the New Heights it Deserves</h1>
+                                <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
+                                <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
+                                <div>
+                                    <a class="btn-theme-outlined text-black" href="contact.php">Get a free quote</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
 
             <!-- Banner 2 -->
@@ -526,7 +381,7 @@
                             <h1 class=" my-4 text-lg-center text-start">Did You Dream of Becoming the Next Bestseller? We Will Make Your Dreams Come True</h1>
                             <p class=" my-4 justify-text text-lg-center text-start">We are a full-service book publishing agency that has helped authors from all over the world achieve their publishing goals. If you have a story that you’d like to transform into e-book, you’ve just landed the right place.</p>
                             <div class="text-lg-center text-start my-4">
-                                <a class="btn btn-dark " href="#">Get a free quote</a>
+                                <a class="btn-theme-primary " href="contact.php">Get a free quote</a>
                             </div>
                             <h6 class=" my-4 text-lg-center text-start">Join over 200+ people already using megabookwriting</h6>
                         </div>
@@ -546,119 +401,20 @@
             </section>
 
             <!--Testimonials-->
-            <section class="pt-5 pb-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="splide">
-                            <div class="splide__track">
-                                <div class="splide__list">
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card text-dark">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
+            <?php include('common/testimonials.php'); ?>
 
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card  text-black">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card text-black">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card text-black">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card text-black">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card text-black">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!--FAQS-->
             <section class="section-margin-y">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">2,157 people have said how good is megawriting</div>
-                            <h1 class="text-center">Frequently Asked Questions</h1>
-                        </div>
+
                         <div class="row justify-content-center">
+                            <div class="col-lg-4">
+                                <img src="assets/faq-girl.jpg" width="100%" />
+                            </div>
                             <div class="col-lg-8">
+                                <div class="text-start">2,157 people have said how good is megawriting</div>
+                                <h1 class="text-start">Frequently Asked Questions</h1>
                                 <div class="accordion accordion-flush" id="accordionFlushExample">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="flush-headingOne">
@@ -690,8 +446,10 @@
                                             <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
+
                         </div>
 
                     </div>
@@ -702,24 +460,14 @@
                 <div class="container-fluid">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-7 col-md-12 col-sm-12 px-3">
+                            <div class="col-lg-7 col-md-12 col-sm-12">
                                 <h1 class="hero-text">We would love to hear from you,<br>Get in touch👋</h1>
                                 <p class="hero-para mt-4">We’ve established a huge portfolio over the years and have delivered flawless projects to our valued customers. Every ghost writer in our agency stands out for being creative, intellectual, skilled, and experienced, Check out our previous work!</p>
-                                <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card" style="width: 27rem; background-color:#0A0A25; color:#fff;">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="card border-0"></div>
+                                <div class="card-body" style="background-color:#efefef;">
+                                    <p class="section-text"><span style="font-size:18px; font-weight:700">"</span>Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.<span style="font-size:18px; font-weight:700">"</span></p>
+                                    <p class="section-text"><span style="font-weight:600">John Doe</span> <br><span class="fs-6">CEO at ABC</span>
+                                </div>
                             </div>
                             <div class="col-lg-5 col-md-12 col-sm-12 form-col">
                                 <form method="POST" action="mails.php">
@@ -746,6 +494,7 @@
 
                             </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -753,14 +502,43 @@
         </div>
     </main>
     <?php include('footor.php'); ?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-    <script>
-        var splide = new Splide('.splide', {
-            type: 'loop',
-            perPage: 3,
-            rewind: true,
-        });
 
-        splide.mount();
+    <script>
+        $(document).ready(function() {
+
+            $('.items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var owl = $('#feedback');
+            owl.owlCarousel({
+                margin: 30,
+                autoplay: !0,
+                dots: !0,
+                nav: !1,
+                loop: !0,
+                smartSpeed: 1000,
+                autoplayHoverPause: !0,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        })
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
