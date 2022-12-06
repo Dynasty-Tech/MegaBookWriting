@@ -81,7 +81,7 @@
                         </ul>
                         <div>
                             <a class="btn btn-outline-dark text-white" href="contact.php">Contact</a>
-                            <!-- <button class="btn btn-dark" type="submit">Get Started</button> -->
+                            <a class="btn btn-success" href="contact.php" type="submit">Get Started</a>
                         </div>
 
                     </div>

@@ -281,7 +281,7 @@
             </section>
 
             <!--Section Content Centered-->
-            <section class="section-margin-y" style="background-color: #0A0A25">
+            <section class="section-margin-y d-none" style="background-color: #0A0A25">
                 <div class="container text-white text-center">
                     <div class="row p-4">
                         <div class="col-sm-12 col-md-12 col-lg-12 text-start text-lg-center ">
@@ -298,17 +298,17 @@
             <!--Banners-->
             <section class="section-margin-y">
                 <div class="container p-3 d-block banner">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-lg-6 col-md-6 col-sm-12 text-lg-center text-sm-start">
+                    <div class="row align-items-center justify-content-center px-5">
+                        <div class="col-lg-6 col-md-6 col-sm-12 text-lg-start text-sm-start">
                             <h3>Try it for free</h3>
-                            <p class="section-text">We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start.</p>
+                            <p>We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start.</p>
                             <div>
-                                <a class="btn btn-dark" href="">Get a free quote</a>
+                                <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
                                 <a class="btn btn-theme-outlined" href="">Live chat</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block ps-3 text-end">
-                            <img src="assets/student.png " width="250" />
+                            <img src="assets/why-choose-us-animated-img1.png " width="400" />
                         </div>
                     </div>
                 </div>
