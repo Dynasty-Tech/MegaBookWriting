@@ -41,7 +41,7 @@
                     <div class="container text-white">
                         <div class="row ">
                             <div class="col-sm-12 col-md-12 col-lg-12 custom-margin-y text-center">
-                                <h1 class="hero-text">Thank you!</h1>
+                                <h1 class="hero-text">Response Recieved ✅</h1>
                                 <p class="hero-para mt-4">Become the next bestselling author with our professional yet artistic ghostwriting services! Our writers have the knowledge and expertise to produce well-written, error-free, and plagiarism-free content.</p>
                                 <a class="btn btn-theme-outlined text-white" href="">Get a free quote</a>
                             </div>

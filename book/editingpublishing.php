@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mega Book Writing</title>
+    <title>Edit & Publishing</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
@@ -21,7 +21,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../megabookwriting/css/beeta-owl.carousel.min.css">
+    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.css">
+    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.default.min.css">
+    <script src="../megabookwriting/js/beeta-owl.carousel.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <?php if (isset($_SESSION['success'])) {
+        echo $_SESSION['success'];
+        unset($_SESSION['success']);
+    } ?>
 </head>
+
 
 <body>
     <main>
@@ -38,8 +53,8 @@
                                 <h1 class="hero-text ">Timeless Book Publication & Printing Services</h1>
                                 <p class="hero-para mt-4">We are a full-service book publisher and printer, providing everything you need to get your book into print and distributed to the masses. Whether you're looking to self-publish or seeking a traditional publisher, our book publishing agency can help you achieve your publishing goals.</p>
                                 <div>
-                                    <a class="btn btn-theme-outlined text-white" href="#">Get a free quote</a>
-                                    <a class="btn text-white" href="#">Live chat</a>
+                                    <a class="btn btn-theme-outlined-light text-white" href="#">Get a free quote</a>
+                                    <a class="btn btn-theme-outlined-light text-white" href="#">Live chat</a>
                                 </div>
                             </div>
                             <div class="col-lg-4 form-col d-none d-md-none d-sm-none d-lg-block card-body-border-gradient">
@@ -95,7 +110,7 @@
 
                                 <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
                                     <!--CARDS-->
-                                    <div class="card">
+                                    <div class="card-color">
 
                                         <div class="card-body">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
@@ -108,7 +123,7 @@
                                 </div>
                                 <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
                                     <!--CARDS-->
-                                    <div class="card">
+                                    <div class="card-color">
 
                                         <div class="card-body">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
@@ -122,7 +137,7 @@
                                 </div>
                                 <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
                                     <!--CARDS-->
-                                    <div class="card">
+                                    <div class="card-color">
 
                                         <div class="card-body">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
@@ -135,7 +150,7 @@
                                 </div>
                                 <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
                                     <!--CARDS-->
-                                    <div class="card">
+                                    <div class="card-color">
 
                                         <div class="card-body">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
@@ -206,11 +221,11 @@
                         <h1 class="text-lg-start text-sm-start px-5 ">Inclusive Writing Process</h1>
                         <p class="text-justify px-5">All kidding aside, regardless of its function or purpose, your eBook truly needs to capture the<br> interest of the reader in order for it to make them actually want the product you’re trying<br> to sell. With our staff's experience in custom e-book writing services, we'll work closely with<br> you to get your message across loud and clear! Weakened content could result in a poor user<br> experience - one that could drive away potential customers. That's why we ensure our E<br> book writer follows premium content creation standards every time they work on any<br> project!</p>
                         <br>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
+                        <div class="col-lg-3 col-sm-12 mt-2 border-0 px-5 ">
                             <!--CARDS-->
-                            <div class="card">
+                            <div class="card-color">
 
-                                <div class="card-body">
+                                <div class="card-body ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
                                         <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z" />
                                     </svg>
@@ -219,9 +234,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
+                        <div class="col-lg-3 col-sm-12 mt-2 border-0 px-5  ">
                             <!--CARDS-->
-                            <div class="card">
+                            <div class="card-color">
 
                                 <div class="card-body">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
@@ -233,9 +248,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
+                        <div class="col-lg-3 col-sm-12 mt-2 border-0 px-5  ">
                             <!--CARDS-->
-                            <div class="card">
+                            <div class="card-color">
 
                                 <div class="card-body">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
@@ -246,9 +261,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
+                        <div class="col-lg-3 col-sm-12 mt-2 border-0 px-5 ">
                             <!--CARDS-->
-                            <div class="card">
+                            <div class="card-color">
 
                                 <div class="card-body">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
@@ -266,21 +281,17 @@
             </section>
 
             <!--Section Content Centered-->
-            <section class="section-margin-y">
-                <div class="container bg-light text-center">
+            <section class="section-margin-y" style="background-color: #0A0A25">
+                <div class="container text-white text-center">
                     <div class="row p-4">
-                        <div class="col-sm-12 col-md-12 col-lg-12 text-start text-lg-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 text-start text-lg-center ">
                             <h1>We Give Your Book the New Heights it Deserves</h1>
                             <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
 
                         </div>
                     </div>
-                    <div class="row d-none d-lg-block d-md-block">
-                        <div class="col-lg-12"><img src="assets/section-content-photo-1.png" width="550" height="300" />
-                        </div>
-
-                    </div>
-                    <br>
+                    
+                    
                 </div>
             </section>
 
@@ -316,7 +327,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 d-none d-sm-none d-lg-block d-md-block text-end">
-                            <img src="assets/section-content-photo-1.png" />
+                            <img src="assets/editbook.jpg" width="550" height="600" />
                         </div>
 
                     </div>
@@ -324,258 +335,26 @@
             </section>
 
             <!--Process-->
-            <section class="section-margin-y">
-                <div class="container">
-                    <div class="row">
-                        <h6 class="text-lg-center text-sm-start">How we do it</h6>
-                        <h1 class="text-lg-center text-sm-start">Our Working Process</h1>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
-                            <!--CARDS-->
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
-                                        <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z" />
-                                    </svg>
-                                    <h6>Book Assessment</h6>
-                                    <p class="card-text">We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
-                            <!--CARDS-->
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
-                                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
-                                        <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z" />
-                                    </svg>
-                                    <h6>Book Outline</h6>
-                                    <p class="card-text">We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
-                            <!--CARDS-->
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
-                                        <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0zM2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z" />
-                                    </svg>
-                                    <h6>Writing and Editing</h6>
-                                    <p class="card-text">We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-12 mt-2 border-0 ">
-                            <!--CARDS-->
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
-                                        <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
-                                        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
-                                    </svg>
-                                    <h6>Proofreading</h6>
-                                    <p class="card-text">We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6 col-sm-12 mt-5 border-0 ">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <h5 class="section-title">Publication</h5>
-                                    <p class="section-text">Once your book is formatted, we will help you publish it. We can publish it on Amazon Kindle or create a print-on-demand version.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </section>
+            <?php include('common/process.php'); ?>
 
             <!--Testimonials-->
-            <section class="pt-5 pb-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="splide">
-                            <div class="splide__track">
-                                <div class="splide__list">
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card text-dark">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card  text-black">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card text-black">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card text-black">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card text-black">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 splide__slide m-2">
-                                        <div class="card text-black">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                                    <div class="ps-3">
-                                                        <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                        <p class="section-text">
-                                                    </div>
-
-                                                </div>
-                                                <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <?php include('common/testimonials.php'); ?>
 
             <!--FAQS-->
-            <section class="section-margin-y">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">2,157 people have said how good is megawriting</div>
-                            <h1 class="text-center">Frequently Asked Questions</h1>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                Question #1
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                Question #2
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingThree">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                Question #3
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+            <?php include('common/faqs.php'); ?>
 
             <!--Contact -->
             <section class="hero-section section-margin-y">
                 <div class="container-fluid">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-7 col-md-12 col-sm-12 px-3">
+                            <div class="col-lg-7 col-md-12 col-sm-12">
                                 <h1 class="hero-text">We would love to hear from you,<br>Get in touch👋</h1>
                                 <p class="hero-para mt-4">We’ve established a huge portfolio over the years and have delivered flawless projects to our valued customers. Every ghost writer in our agency stands out for being creative, intellectual, skilled, and experienced, Check out our previous work!</p>
-                                <div class="col-sm-4 splide__slide m-2">
-                                    <div class="card" style="width: 24rem; background-color:#0A0A25; color:#fff;">
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div><span><img src="assets/CEO.png" /></span></div>
-                                                <div class="ps-3">
-                                                    <p class="section-text"><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                                    <p class="section-text">
-                                                </div>
-
-                                            </div>
-                                            <p class="section-text">Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                                        </div>
-                                    </div>
+                                <div class="card border-0"></div>
+                                <div class="card-body" style="background-color:#efefef;">
+                                    <p class="section-text"><span style="font-size:18px; font-weight:700">"</span>Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.<span style="font-size:18px; font-weight:700">"</span></p>
+                                    <p class="section-text"><span style="font-weight:600">John Doe</span> <br><span class="fs-6">CEO at ABC</span>
                                 </div>
                             </div>
                             <div class="col-lg-5 col-md-12 col-sm-12 form-col">
@@ -583,6 +362,7 @@
 
                             </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -590,15 +370,40 @@
         </div>
     </main>
     <?php include('footor.php'); ?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script>
-        var splide = new Splide('.splide', {
-            type: 'loop',
-            perPage: 3,
-            rewind: true,
-        });
+        $(document).ready(function() {
 
-        splide.mount();
+            $('.items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var owl = $('#feedback');
+            owl.owlCarousel({
+                margin: 30,
+                autoplay: !0,
+                dots: !0,
+                nav: !1,
+                loop: !0,
+                smartSpeed: 1000,
+                autoplayHoverPause: !0,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        })
     </script>
 </body>
 
