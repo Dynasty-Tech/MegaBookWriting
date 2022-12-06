@@ -1,4 +1,12 @@
 <!--Navbar-->
+<?php 
+$current_url = substr($_SERVER['REQUEST_URI'], 19);
+?>
+<style type="text/css">
+  .active{
+    font-weight: 800 !important;
+  }
+</style>
 <div class="container-fluid">
   <div class="row">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -10,14 +18,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+              <a class="nav-link <?php if($current_url=='index.php' || $current_url==''){ echo 'active'; } ?>" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="ebook.php">E-Book</a>
+              <a class="nav-link <?php if($current_url=='ebook.php'){ echo 'active'; } ?>" aria-current="page" href="ebook.php">E-Book</a>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle <?php if($current_url=='ghoostwriting.php'){ echo 'active'; } ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Ghost Writing </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="ghoostwriting.php">Story Writing</a></li>
@@ -73,7 +81,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.php">About</a>
+              <a class="nav-link <?php if($current_url=='about.php'){ echo 'active'; } ?>" href="about.php">About</a>
             </li>
 
           </ul>
