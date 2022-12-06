@@ -333,7 +333,9 @@
         </div>
     </main>
     <?php include('footor.php'); ?>
-    <script src="../book/js/beeta-owl.carousel.js"></script>book       $(document).ready(function() {
+    <script src="../book/js/beeta-owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
 
             $('.items').slick({
                 infinite: true,
