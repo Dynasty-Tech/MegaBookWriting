@@ -24,7 +24,7 @@ $current_url = substr($_SERVER['REQUEST_URI'], 19);
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link active text-white <?php if($current_url=='ebook.php'){ echo 'active'; } ?>" aria-current="page" href="ebook.php">E-Book</a>
+                                <a class="nav-link text-white <?php if($current_url=='ebook.php'){ echo 'active'; } ?>" aria-current="page" href="ebook.php">E-Book</a>
                             </li>
 
                             <li class="nav-item dropdown">

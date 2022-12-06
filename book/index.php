@@ -156,7 +156,8 @@
                                 </p>
                                 <div>
                                     <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
-                                    <a class="btn btn-theme-outlined " href="#">Live chat</a>
+                                    <!-- <a class="btn btn-theme-outlined " href="#">Live chat</a> -->
+                                    <button class="btn btn-theme-outlined" data-test-label="live-chat-button" onclick="window.open('https://tawk.to/chat/637cb7e0daff0e1306d8cb72/1gifishks','share-live-chat','width=350, height=520'); return false;">Live chat</button>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +197,8 @@
                             <p>We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start.</p>
                             <div>
                                 <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
-                                <a class="btn btn-theme-outlined" href="">Live chat</a>
+                                <!-- <a class="btn btn-theme-outlined" href="">Live chat</a> -->
+                                <button class="btn btn-theme-outlined" data-test-label="live-chat-button" onclick="window.open('https://tawk.to/chat/637cb7e0daff0e1306d8cb72/1gifishks','share-live-chat','width=350, height=520'); return false;">Live chat</button>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block ps-3 text-end">
