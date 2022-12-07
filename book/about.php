@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mega Book Writing</title>
+    <title>About</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
@@ -21,23 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../book/css/beeta-owl.carousel.min.css">
-    <link rel="stylesheet" href="../book/css/beeta-owl.theme.css">
-    <link rel="stylesheet" href="../book/css/beeta-owl.theme.default.min.css">
-    <script src="../megabookwriting/js/beeta-owl.carousel.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
     
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    <?php if (isset($_SESSION['success'])) {
-        echo $_SESSION['success'];
-        unset($_SESSION['success']);
-    } ?>
 </head>
 
 <body>
@@ -143,33 +127,33 @@
                 <div class="container bg-light">
                     <div class="row p-5">
                         <div class="col-lg-6 d-none d-sm-none d-lg-block d-md-block">
-                            <img src="assets/girl.png" width="400" height="500" />
+                            <img src="assets/section-content-photo-1.png" />
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6 justify-space-between">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
                             <h1>We Give Your Book the New Heights it Deserves</h1>
                             <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
                             <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
                             <div>
-                                <a class="btn-theme-outlined text-black" href="#">Get a free quote</a>
+                                <a class="btn-theme-outlined text-black" href="contact.php">Get a free quote</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-             <!--Banners-->
-             <section class="section-margin-y">
-                <div class="container p-3 d-block banner">
-                    <div class="row align-items-center justify-content-center px-5">
-                        <div class="col-lg-6 col-md-6 col-sm-12 text-lg-start text-sm-start">
-                            <h3>Try it for free</h3>
-                            <p>We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start.</p>
+            <!--Section Banner 1-->
+            <section class="section-margin-y">
+                <div class="container p-5 d-block banner">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h3 class="text-sm-start">Try it for free</h3>
+                            <p class="section-text">We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start.</p>
                             <div>
-                                <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
-                                <a class="btn btn-theme-outlined" href="">Live chat</a>
+                                <a class="btn btn-dark" href="contact.php">Get a free quote</a>
+                                <button class="btn btn-theme-outlined" data-test-label="live-chat-button" onclick="window.open('https://tawk.to/chat/637cb7e0daff0e1306d8cb72/1gifishks','share-live-chat','width=350, height=520'); return false;">Live chat</button>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block ps-3 text-end">
-                            <img src="assets/why-choose-us-animated-img1.png " width="400" />
+                        <div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block ps-5 text-end">
+                            <img src="assets/student.png" width="250" />
                         </div>
                     </div>
                 </div>
@@ -230,7 +214,7 @@
                 </div>
             </section>
             <!--Section Content Centered-->
-            <section class="section-margin-y d-none">
+            <section class="section-margin-y">
                 <div class="container bg-light text-center">
                     <div class="row p-5">
                         <div class="col-sm-12 col-md-12 col-lg-12 text-start text-lg-center">
@@ -256,7 +240,7 @@
                             <h1 class=" my-4 text-lg-center text-start">Did You Dream of Becoming the Next Bestseller? We Will Make Your Dreams Come True</h1>
                             <p class=" my-4 justify-text text-lg-center text-start">We are a full-service book publishing agency that has helped authors from all over the world achieve their publishing goals. If you have a story that you’d like to transform into e-book, you’ve just landed the right place.</p>
                             <div class="text-lg-center text-start my-4">
-                                <a class="btn btn-dark " href="#">Get a free quote</a>
+                                <a class="btn btn-dark " href="contact.php">Get a free quote</a>
                             </div>
                             <h6 class=" my-4 text-lg-center text-start">Join over 200+ people already using megabookwriting</h6>
                         </div>
@@ -354,27 +338,7 @@
 
                             </div>
                             <div class="col-lg-5 col-md-12 col-sm-12 form-col">
-                                <form>
-                                    <p class="form-text">One step closer to become the best!</p>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Full Name">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <input type="numbers" class="form-control" id="exampleInputnumber" placeholder="Phone Number">
-                                    </div>
-                                    <div class="form-outline mb-4">
-                                        <textarea class="form-control" id="form4Example3" rows="4" placeholder="Brief description of  your book"></textarea>
-
-                                    </div>
-
-                                    <button type="submit" class="btn btn-dark w-100">Send Message</button>
-
-                                </form>
+                                <?php include('contact-form.php') ?>
 
                             </div>
                         </div>
@@ -385,8 +349,6 @@
         </div>
     </main>
     <?php include('footor.php'); ?>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-    <script src="../book/js/beeta-owl.carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script>
         var splide = new Splide('.splide', {

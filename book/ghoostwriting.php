@@ -22,9 +22,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../book/css/beeta-owl.carousel.min.css">
-    <link rel="stylesheet" href="../book/css/beeta-owl.theme.css">
-    <link rel="stylesheet" href="../book/css/beeta-owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="../megabookwriting/css/beeta-owl.carousel.min.css">
+    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.css">
+    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.default.min.css">
     <script src="../megabookwriting/js/beeta-owl.carousel.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -96,82 +96,108 @@
             </section>
 
             <!--Section-1-->
-            <section class="section-margin-y">
-                <div class="container-fluid">
+            <section>
+                <div class="container-fluid ">
                     <div class="container">
-                        <div class="row ">
+                        <div class="row pt-5">
                             <div class="col-lg-6 col-sm-12 col-md-12">
                                 <h6 class="section-subtitle">Mega bookwriting</h6>
-                                <h1 class="section-title">Our Versatility & DiversitySet Us Apart From Other Ghostwriters</h1>
+                                <h2 class="section-title">Our Versatility & DiversitySet Us Apart From Other Ghostwriters</h2>
                                 <p class="section-text pt-3">
                                     When you hire our service for your upcoming project, you'll have an award-winning team at your disposal. We’ve developed top skills and expertise to efficiently complete your project. We are fully capable of working in any genre, be it nonfiction, science fiction, historical fiction, romance, and more. Our business ensures that only the best ghostwriters work on your project. We work with you extensively to make sure the highest quality possible is delivered and that we deliver exactly what you're asking for.
                                 </p>
-
-                            </div >
-                            <div class="col-lg-6 col-sm-12 col-md-12 p-5 card-body-border-gradient">
                                 <div>
                                     <div class="card-body">
                                         <h5 class="section-title">Heres what makes us different from others</h5>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Action Adventure</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> health/Fitness</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Art/Architecture</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Fantasy</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Autobiography</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> History</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Biography</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Novel</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Business/Economics</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Historical Fiction</a>
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Action Adventure</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> health/Fitness</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                        </ul>
+                                        <!-- <ul>
+                                            <li class="btn services-btn text-black">
+                                            <li class="btn services-btn text-black">
+                                            <li class="btn services-btn text-black">
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Fantasy</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Autobiography</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> History</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Biography</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Novel</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Business/Economics</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Historical Fiction</li>
+                                        </ul> -->
+
 
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-md-12">
+                                <h6 class="section-subtitle">Mega bookwriting</h6>
+                                <h2 class="section-title">Our Versatility & DiversitySet Us Apart From Other Ghostwriters</h2>
+                                <p class="section-text pt-3">
+                                    When you hire our service for your upcoming project, you'll have an award-winning team at your disposal. We’ve developed top skills and expertise to efficiently complete your project. We are fully capable of working in any genre, be it nonfiction, science fiction, historical fiction, romance, and more. Our business ensures that only the best ghostwriters work on your project. We work with you extensively to make sure the highest quality possible is delivered and that we deliver exactly what you're asking for.
+                                </p>
+                                <div>
+                                    <div class="card-body">
+                                        <h5 class="section-title">Heres what makes us different from others</h5>
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Action Adventure</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> health/Fitness</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="list-group-item"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                        </ul>
+                                        <!-- <ul>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Action Adventure</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> health/Fitness</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Art/Architecture</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Fantasy</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Autobiography</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> History</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Biography</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Novel</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Business/Economics</li>
+                                            <li class="btn services-btn text-black"><img src="assets/Group 22.png" /> Historical Fiction</li>
+                                        </ul> -->
 
 
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
             </section>
 
             <!--Section Content Reversed-->
-            
             <section class="section-margin-y">
-                <div class="container-fluid">
-                    <div class="container">
-                        <div class="row ">
-                            
-                            <div class="col-lg-6 col-sm-12 col-md-12 p-5 card-body-border-gradient">
-                                <div>
-                                    <div class="card-body">
-                                        <h5 class="section-title">Heres what makes us different from others</h5>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Action Adventure</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> health/Fitness</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Art/Architecture</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Fantasy</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Autobiography</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> History</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Biography</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Novel</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Business/Economics</a>
-                                        <a class="btn services-btn text-black"><img src="assets/Group 22.png" /> Historical Fiction</a>
-
-                                    </div>
-                                </div>
-
-
+                <div class="container bg-light">
+                    <div class="row p-3">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <h1>We Give Your Book the New Heights it Deserves</h1>
+                            <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
+                            <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
+                            <div>
+                                <a class="btn-theme-outlined" href="#">Get a free quote</a>
                             </div>
-                            <div class="col-lg-6 col-sm-12 col-md-12">
-                                <h6 class="section-subtitle">Mega bookwriting</h6>
-                                <h1 class="section-title">Our Versatility & DiversitySet Us Apart From Other Ghostwriters</h1>
-                                <p class="section-text pt-3">
-                                    When you hire our service for your upcoming project, you'll have an award-winning team at your disposal. We’ve developed top skills and expertise to efficiently complete your project. We are fully capable of working in any genre, be it nonfiction, science fiction, historical fiction, romance, and more. Our business ensures that only the best ghostwriters work on your project. We work with you extensively to make sure the highest quality possible is delivered and that we deliver exactly what you're asking for.
-                                </p>
-
-                            </div >
                         </div>
-                    </div>
+                        <div class="col-lg-6 d-none d-sm-none d-lg-block d-md-block text-end">
+                            <img src="assets/ghostread.jpg" width="650" height="600" />
+                        </div>
 
+                    </div>
                 </div>
             </section>
 
@@ -276,27 +302,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-5 col-md-12 col-sm-12 form-col">
-                                <form method="POST" action="mails.php">
-                                    <p class="form-text">One step closer to become the best!</p>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Full Name" name="name" required>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" name="email" required>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <input type="numbers" class="form-control" id="exampleInputnumber" placeholder="Phone Number" name="phoneNumbar" required>
-                                    </div>
-                                    <div class="form-outline mb-4">
-                                        <textarea class="form-control" id="form4Example3" rows="4" placeholder="Brief description of  your book" name="description" required></textarea>
-
-                                    </div>
-
-                                    <button type="submit" class="btn btn-dark w-100" name="contact">Send Message</button>
-
-                                </form>
+                                <?php include('contact-form.php') ?>
 
                             </div>
                         </div>
@@ -310,7 +316,6 @@
     </main>
 
     <?php include('footor.php'); ?>
-    <script src="../book/js/beeta-owl.carousel.js"></script>
     <script>
         $(document).ready(function() {
 

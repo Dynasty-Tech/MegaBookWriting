@@ -22,9 +22,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../book/css/beeta-owl.carousel.min.css">
-    <link rel="stylesheet" href="../book/css/beeta-owl.theme.css">
-    <link rel="stylesheet" href="../book/css/beeta-owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="../megabookwriting/css/beeta-owl.carousel.min.css">
+    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.css">
+    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.default.min.css">
     <script src="../megabookwriting/js/beeta-owl.carousel.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -418,27 +418,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-5 col-md-12 col-sm-12 form-col">
-                                <form method="POST" action="mails.php">
-                                    <p class="form-text">One step closer to become the best!</p>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Full Name" name="name" required>
-                                    </div>
 
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" name="email" required>
-                                    </div>
+                                <?php include('contact-form.php') ?>
 
-                                    <div class="mb-3">
-                                        <input type="numbers" class="form-control" id="exampleInputnumber" placeholder="Phone Number" name="phoneNumbar" required>
-                                    </div>
-                                    <div class="form-outline mb-4">
-                                        <textarea class="form-control" id="form4Example3" rows="4" placeholder="Brief description of  your book" name="description" required></textarea>
-
-                                    </div>
-
-                                    <button type="submit" class="btn btn-dark w-100" name="contact">Send Message</button>
-
-                                </form>
 
                             </div>
                         </div>
@@ -450,7 +432,6 @@
         </div>
     </main>
     <?php include('footor.php'); ?>
-    <script src="../book/js/beeta-owl.carousel.js"></script>
     <script>
         $(document).ready(function() {
 

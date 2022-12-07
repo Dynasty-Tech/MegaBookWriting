@@ -22,9 +22,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../book/css/beeta-owl.carousel.min.css">
-    <link rel="stylesheet" href="../book/css/beeta-owl.theme.css">
-    <link rel="stylesheet" href="../book/css/beeta-owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="../megabookwriting/css/beeta-owl.carousel.min.css">
+    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.css">
+    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.default.min.css">
     <script src="../megabookwriting/js/beeta-owl.carousel.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -281,7 +281,7 @@
             </section>
 
             <!--Section Content Centered-->
-            <section class="section-margin-y d-none" style="background-color: #0A0A25">
+            <section class="section-margin-y" style="background-color: #0A0A25">
                 <div class="container text-white text-center">
                     <div class="row p-4">
                         <div class="col-sm-12 col-md-12 col-lg-12 text-start text-lg-center ">
@@ -298,17 +298,17 @@
             <!--Banners-->
             <section class="section-margin-y">
                 <div class="container p-3 d-block banner">
-                    <div class="row align-items-center justify-content-center px-5">
-                        <div class="col-lg-6 col-md-6 col-sm-12 text-lg-start text-sm-start">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12 text-lg-center text-sm-start">
                             <h3>Try it for free</h3>
-                            <p>We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start.</p>
+                            <p class="section-text">We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start.</p>
                             <div>
-                                <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
+                                <a class="btn btn-dark" href="">Get a free quote</a>
                                 <a class="btn btn-theme-outlined" href="">Live chat</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block ps-3 text-end">
-                            <img src="assets/why-choose-us-animated-img1.png " width="400" />
+                            <img src="assets/student.png " width="250" />
                         </div>
                     </div>
                 </div>
@@ -358,27 +358,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-5 col-md-12 col-sm-12 form-col">
-                                <form method="POST" action="mails.php">
-                                    <p class="form-text">One step closer to become the best!</p>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Full Name" name="name" required>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" name="email" required>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <input type="numbers" class="form-control" id="exampleInputnumber" placeholder="Phone Number" name="phoneNumbar" required>
-                                    </div>
-                                    <div class="form-outline mb-4">
-                                        <textarea class="form-control" id="form4Example3" rows="4" placeholder="Brief description of  your book" name="description" required></textarea>
-
-                                    </div>
-
-                                    <button type="submit" class="btn btn-dark w-100" name="contact">Send Message</button>
-
-                                </form>
+                                <?php include('contact-form.php') ?>
 
                             </div>
                         </div>
@@ -390,7 +370,6 @@
         </div>
     </main>
     <?php include('footor.php'); ?>
-    <script src="../book/js/beeta-owl.carousel.js"></script>
     <script>
         $(document).ready(function() {
 
