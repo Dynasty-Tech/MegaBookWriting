@@ -23,10 +23,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../megabookwriting/css/beeta-owl.carousel.min.css">
-    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.css">
-    <link rel="stylesheet" href="../megabookwriting/css/beeta-owl.theme.default.min.css">
-    <script src="../megabookwriting/js/beeta-owl.carousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="../book/css/beeta-owl.carousel.min.css">
+    <link rel="stylesheet" href="../book/css/beeta-owl.theme.css">
+    <link rel="stylesheet" href="../book/css/beeta-owl.theme.default.min.css">
+   
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -168,7 +168,7 @@
             <section class="section-margin-y">
                 <div class="conatiner-fluid bg-light-section">
                     <div class="container p-5">
-                        <div class="row p-3">
+                        <div class="row ">
 
                             <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-left">
                                 <h1 class="section-1-heading-h1">We Give Your Book the New Heights it Deserves</h1>
@@ -201,8 +201,9 @@
                                 <button class="btn btn-theme-outlined" data-test-label="live-chat-button" onclick="window.open('https://tawk.to/chat/637cb7e0daff0e1306d8cb72/1gifishks','share-live-chat','width=350, height=520'); return false;">Live chat</button>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block ps-3 text-end">
-                            <img src="assets/why-choose-us-animated-img1.png " width="400" />
+                        <div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block ps-3 text-end rounded-start">
+                            
+                            <img src="../book/assets/banner-2.jpg" class="rounded-start" width="400" />
                         </div>
                     </div>
                 </div>
@@ -484,7 +485,8 @@
         </div>
     </main>
     <?php include('footor.php'); ?>
-
+    <script src="../book/js/beeta-owl.carousel.js"></script>
+    <script src="../book/js/main.js"></script>
     <script>
         $(document).ready(function() {
 
@@ -520,6 +522,7 @@
             })
         })
     </script>
+
     <script>
         AOS.init();
     </script>

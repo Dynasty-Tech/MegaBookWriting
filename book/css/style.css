@@ -95,6 +95,12 @@ a {
 }
 .nav-item {
   padding: 10px 3px;
+  position:sticky;
+}
+
+
+nav a:hover {
+  text-decoration: underline;
 }
 .list-item {
   padding: 8px;
@@ -530,7 +536,7 @@ body {
   }
 }
 .index-image-section-3 {
-  background: url("../assets/book2.jpg");
+  background: url("../assets/book3.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -564,6 +570,9 @@ body {
   .px-5 {
     padding: 0 !important;
   }
+  li.nav-item a{
+    font-size:14px !important;
+  }
 }
 .list-group-item{
   
@@ -573,4 +582,14 @@ body {
 .list-group-item.active {
   background-color: #0a0a25 !important;
 
+}
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow:none !important;
+  color: #000 !important;
+}
+.rounded-start {
+  border-bottom-left-radius: 4.25rem!important;
+  border-top-left-radius: 0.25rem!important;
+  width: 400px;
 }
