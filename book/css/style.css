@@ -94,7 +94,8 @@ a {
   text-decoration: none;
 }
 .nav-item {
-  padding: 10px 3px;
+  white-space: nowrap !important;
+  margin: 5px 0 !important;
 }
 .list-item {
   padding: 8px;

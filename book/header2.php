@@ -9,6 +9,47 @@ $current_url = substr($_SERVER['REQUEST_URI'], 19);
 #navbarSupportedContent{
   display:none;
 }
+<style>
+    @media only screen and (max-width: 600px) {
+  .p-1,
+  .p-2,
+  .p-3,
+  .p-4,
+  .p-5,
+  .px-1,
+  .px-2,
+  .px-3,
+  .px-4,
+  .px-5 {
+    padding: 20px 15px !important;
+  }
+  h1{
+    font-size:24px !important;
+    text-decoration: underline !important;
+    font-weight: 700 !important;
+  }
+  h2{
+    font-size:18px !important;
+  }
+  h3{
+    font-size:15px !important;
+  }
+  h4{
+    font-size:14px !important;
+  }
+  h5{
+    font-size:13px !important;
+  }
+  h6{
+    font-size:16px !important;
+  }
+  p{
+    font-size:14px !important;
+  }
+  .navbar-brand img{
+    width: 190px !important;
+  }
+}
 </style>
 <section>
 
@@ -90,11 +131,14 @@ $current_url = substr($_SERVER['REQUEST_URI'], 19);
                                 <a class="nav-link text-white <?php if($current_url=='about.php'){ echo 'active'; } ?>" href="about.php">About</a>
                             </li>
 
+                           <li class="nav-item mx-1">
+                                <a class="btn btn-outline-dark text-white w-100 <?php if($current_url=='contact.php'){ echo 'active'; } ?>" href="contact.php">Contact</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                            <a class="btn btn-dark w-100" href="contact.php">Get started</a>
+                        </li>
                         </ul>
-                        <div>
-                            <a class="btn btn-outline-dark text-white <?php if($current_url=='contact.php'){ echo 'active'; } ?>" href="contact.php">Contact</a>
-                            <!-- <button class="btn btn-dark" type="submit">Get Started</button> -->
-                        </div>
+                       
 
                     </div>
                 </div>
