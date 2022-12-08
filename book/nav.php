@@ -45,6 +45,9 @@ $current_url = substr($_SERVER['REQUEST_URI'], 19);
     font-size:14px !important;
   }
 }
+#navbarSupportedContent{
+  display:none;
+}
 </style>
 <section>
     <div class="container-fluid" >
@@ -52,7 +55,7 @@ $current_url = substr($_SERVER['REQUEST_URI'], 19);
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.php"><img src="assets/logo.png" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="buttonNavBar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">

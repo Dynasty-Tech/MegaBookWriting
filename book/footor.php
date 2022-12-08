@@ -108,6 +108,10 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 
-
+<script type="text/javascript">
+$('#buttonNavBar').click(function(){
+   $('#navbarSupportedContent').toggle();
+});
+</script>
 
 <!-- End of .container -->
