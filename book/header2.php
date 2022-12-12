@@ -131,7 +131,7 @@ $current_url = substr($_SERVER['REQUEST_URI'], 19);
                                 <a class="nav-link text-white <?php if($current_url=='about.php'){ echo 'active'; } ?>" href="about.php">About</a>
                             </li>
 
-                           <li class="nav-item mx-1">
+                           <li class="nav-item mx-1 d-none">
                                 <a class="btn btn-outline-dark text-white w-100 <?php if($current_url=='contact.php'){ echo 'active'; } ?>" href="contact.php">Contact</a>
                             </li>
                             <li class="nav-item mx-1">

@@ -132,7 +132,7 @@ $current_url = substr($_SERVER['REQUEST_URI'], 19);
                             <li class="nav-item ">
                                 <a class="nav-link" href="about.php">About</a>
                             </li>
-                            <li class="nav-item mx-1    ">
+                            <li class="nav-item mx-1 d-none">
                                 <a class="btn btn-outline-dark w-100 " href="contact.php">Contact</a>
                                 
                             </li>
