@@ -19,7 +19,7 @@ $current_url = substr($_SERVER['REQUEST_URI'], 19);
   .px-3,
   .px-4,
   .px-5 {
-    padding: 20px 0 !important;
+    padding: 20px 15px !important;
   }
   h1{
     font-size:24px !important;
@@ -44,6 +44,12 @@ $current_url = substr($_SERVER['REQUEST_URI'], 19);
   p{
     font-size:14px !important;
   }
+  .navbar-brand img{
+    width: 190px !important;
+  }
+}
+#navbarSupportedContent{
+  display:none;
 }
 </style>
 <section>
@@ -52,7 +58,7 @@ $current_url = substr($_SERVER['REQUEST_URI'], 19);
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.php"><img src="assets/logo.png" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="buttonNavBar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -126,12 +132,14 @@ $current_url = substr($_SERVER['REQUEST_URI'], 19);
                             <li class="nav-item ">
                                 <a class="nav-link" href="about.php">About</a>
                             </li>
-
+                            <li class="nav-item mx-1 d-none">
+                                <a class="btn btn-outline-dark w-100 " href="contact.php">Contact</a>
+                                
+                            </li>
+                            <li class="nav-item ">
+                            <a class="btn btn-dark w-100" href="contact.php">Get started</a>
+                        </li>
                         </ul>
-                        <div>
-                            <a class="btn btn-outline-dark" href="contact.php">Contact</a>
-                            <button class="btn btn-dark" type="submit">Get Started</button>
-                        </div>
 
                     </div>
                 </div>
