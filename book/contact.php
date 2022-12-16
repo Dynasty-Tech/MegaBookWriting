@@ -21,6 +21,9 @@
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </head>
 <style>
 </style>
@@ -31,64 +34,79 @@
          <?php include('header2.php'); ?>
          <!--Header-->
          <section>
-            <div class="container-fluid p-0 m-0" style="background-color: #0A0A25">
-               <div class="container text-white">
-                  <div class="row p-4 text-center">
-                     <div class="col-sm-12 col-md-12 col-lg-12 custom-margin-y">
-                        <h1 class="hero-text">What Holds You Back?</h1>
-                        <p class="hero-para mt-4">At Monster Book Writing, we have multiple industry experts under our umbrella who specialize in different areas of the book writing industry. Give us a call now and get your book delivered in no time!</p>
-                        <a class="btn btn-theme-outlined text-white" href="">Get a free quote</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!--Contact -->
-         <section class="hero-section section-margin-y">
-            <div class="container-fluid">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-lg-7 col-md-12 col-sm-12 px-5">
-                        <h1 class="hero-text">We would love to hear from you,<br>Get in touch👋</h1>
-                        <p class="hero-para mt-4">We’ve established a huge portfolio over the years and have delivered flawless projects to our valued customers. Every ghost writer in our agency stands out for being creative, intellectual, skilled, and experienced, Check out our previous work!</p>
-                        <div class="col-sm-4 splide__slide m-2">
-                           <div class="card" style="width: 27rem; background-color:#0A0A25; color:#fff;">
-                              <div class="card-body">
-                                 <div class="d-flex">
-                                    <div><span><img src="assets/CEO.png" /></span></div>
-                                    <div class="ps-3">
-                                       <p><span>John Doe</span> <br><span class="fs-6">CEO at ABC</span>
-                                       <p>
+                <div class="container-fluid p-0 m-0 pt-5" style="background-color: #0A0A25">
+                    <div class="container text-white">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 ">
+                                <h1 class="hero-text ">What Holds You Back?</h1>
+                                <p class="hero-para mt-4">At Monster Book Writing, we have multiple industry experts under our umbrella who specialize in different areas of the book writing industry. Give us a call now and get your book delivered in no time!</p>
+                                <div>
+                                    <a class="btn btn-theme-outlined-light text-white" href="#">Get a free quote</a>
+                                    <a class="btn btn-theme-outlined-light text-white" href="#">Live chat</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 form-col d-none d-md-none d-sm-none d-lg-block card-body-border-gradient">
+                                <form method="POST" action="mails.php">
+                                    <p class="form-text">One step closer to become the best!</p>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Full Name" name="name" required>
                                     </div>
 
-                                 </div>
-                                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.”</p>
-                              </div>
-                           </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" name="email" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <input type="numbers" class="form-control" id="exampleInputnumber" placeholder="Phone Number" name="phoneNumbar" required>
+                                    </div>
+                                    <p class="form-text-dropdown">Do you have a manuscript that is ready to publish? </p>
+                                    <div class="mb-3">
+
+                                        <select class="btn btn-transparent border w-100 text-start" name="services" required>
+                                            <option class="dropdown-item" value="">Select</option>
+                                            <option class="dropdown-item" value="Action">Action</option>
+                                            <option class="dropdown-item" value="Another action">Another action</option>
+                                            <option class="dropdown-item" value="Something else here">Something else here</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-dark w-100" name="services_btn">Send Message</button>
+
+                                </form>
+                                <p class="form-end text-center">50% off on all services</p>
+                                
+                            </div>
+
                         </div>
-                     </div>
-                     <div class="col-lg-5 col-md-12 col-sm-12 form-col">
-                        <form>
-                           <p class="form-text">One step closer to become the best!</p>
-                           <div class="mb-3">
-                              <input type="text" class="form-control" placeholder="Full Name">
-                           </div>
-                           <div class="mb-3">
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
-                           </div>
-                           <div class="mb-3">
-                              <input type="numbers" class="form-control" id="exampleInputnumber" placeholder="Phone Number">
-                           </div>
-                           <div class="form-outline mb-4">
-                              <textarea class="form-control" id="form4Example3" rows="4" placeholder="Brief description of  your book"></textarea>
-                           </div>
-                           <button type="submit" class="btn btn-dark w-100">Send Message</button>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
+
+                    </div><br>
+                </div>
+
+            </section>
+         <!--Contact -->
+         <section class="hero-section section-margin-y">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12 col-sm-12">
+                                <h1 class="hero-text">We would love to hear from you,<br>Get in touch👋</h1>
+                                <p class="hero-para mt-4">We’ve established a huge portfolio over the years and have delivered flawless projects to our valued customers. Every ghost writer in our agency stands out for being creative, intellectual, skilled, and experienced, Check out our previous work!</p>
+                                <div class="card border-0"></div>
+                                <div class="card-body" style="background-color:#efefef;">
+                                    <p class="section-text"><span style="font-size:18px; font-weight:700">"</span>Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.<span style="font-size:18px; font-weight:700">"</span></p>
+                                    <p class="section-text"><span style="font-weight:600">John Doe</span> <br><span class="fs-6">CEO at ABC</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-sm-12 form-col">
+                                <?php include('contact-form.php') ?>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
       </div>
    </main>
    <?php include('footor.php'); ?>

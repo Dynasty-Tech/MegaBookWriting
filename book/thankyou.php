@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -21,6 +22,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <?php if(isset($_SESSION['success'])){
+            echo $_SESSION['success'];
+            unset($_SESSION['success']);
+        } ?>
 </head>
 
 <body>
@@ -36,7 +41,7 @@
                     <div class="container text-white">
                         <div class="row ">
                             <div class="col-sm-12 col-md-12 col-lg-12 custom-margin-y text-center">
-                                <h1 class="hero-text">Thank you!</h1>
+                                <h1 class="hero-text">Response Recieved ✅</h1>
                                 <p class="hero-para mt-4">Become the next bestselling author with our professional yet artistic ghostwriting services! Our writers have the knowledge and expertise to produce well-written, error-free, and plagiarism-free content.</p>
                                 <a class="btn btn-theme-outlined text-white" href="">Get a free quote</a>
                             </div>
