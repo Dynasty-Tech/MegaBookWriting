@@ -1,488 +1,821 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta name="robots" content="noindex">
-    <meta name="googlebot" content="noindex">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mega Book Writing</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <?php if (isset($_SESSION['success'])) {
-        echo $_SESSION['success'];
-        unset($_SESSION['success']);
-    } ?>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="elemis">
+    <title>MegaBook Writing</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./assets/css/plugins.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
 </head>
 
-
 <body>
-
-    <main>
-        <div class="wrapper">
-            <?php include('common/nav.php'); ?>
-            <!-- header -->
-            <section class="hero-section">
-                <div class="container-fluid grad-cont">
-                    <div class="container">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-7" style="max-width:665px;">
-                                <h1 class="hero-text">Get an A+ With The Best Assignment Help in America.</h1>
-                                <hr class="hr-line" />
-                                <p class="hero-para mt-4">Get the best assignment writing help in America, America, to climb up the ladder of academic success. Our assignment help services guarantee authenticity, originality, and quality at cheap prices.</p>
-                                <div class="row mt-5">
-                                    <div class="col-12 col-md-10 col-lg-9">
-                                        <div class="row">
-                                            <div class="col-6 ">
-                                                <span class="h2">98.2%</span>
-                                                <br>
-                                                <span class="num-text">Orders Arrive Timely</span>
-                                            </div>
-                                            <div class="col-6">
-                                                <span class="h2">9/10</span>
-                                                <br>
-                                                <span class="num-text">Report Better Grades</span>
-                                            </div>
-                                        </div>
-                                        <div class="rating-box mt-5">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <a href="reviews.html">
-                                                        <div class="rev">
-                                                            <div class="cr">
-                                                                <span class="e-text">Client Reviews</span>
-                                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="92px" height="16px" viewBox="0 0 92 16" enable-background="new 0 0 92 16" xml:space="preserve">
-                                                                    <image id="image0" width="92" height="16" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAAQCAMAAACsq+h9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAVFBMVEUAAACp2wCp2gCo2gCp3ACo3ACn2wCn3wCo2gCv3wCp2wCq2gCo2wCo2wCp2wCp2wCp2wCq2wCp2wCp3ACq2gCo2wCp2gCo2wCo2wCp2wCp2wD///99+UHcAAAAGnRSTlMAgKDQUJBAIN8Q72C/4PCPrz9/XzBPz3CwwKx+JrMAAAABYktHRBsCYNSkAAAAB3RJTUUH5ggGCTsUMGtG6AAAAV5JREFUOMudk+tygyAQRhdUVgIhSWtr3fd/0IK6XJakkym/9JvDcpYLwDGUBjmGsYvU1FNGJjjbNrAXQsE4muW0p5SXlCYllIik+pXIwTuUUEfSoVGPSiSkXEyE+gtKqEdxXaubW2To/igL4mNO0cfjHepzqQS+iBSGE9I++fDwdwvov6vk4tUTCmBpqNmvAOPd7z8KVEiQiV00Y7BghzZye68tFa1DR7nzc98UM9Eo5g2pnba6O3eyGvupYk+5qrg7Ii1mtdX5xrxFuVzchTOaGPnJx3LlaK1uwWsq31l3Fl8CH/LKTHl/G0flEiuOVE/l62JPAImTbL7laeEP80J1eweGHQPWAqncpRF41kyi8tNCTkozxyZ4A9tYNDXadDdtEQjKmk1oasTkz8kYqRUaakoTUQXveb04aRfReYfXWHpfZLsWzY5SmRpye0cUTfnY83suD/u/0cJfNpn8ArMANlVAt6PnAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTA4LTA2VDA5OjU5OjIwKzAwOjAwMA5RDgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wOC0wNlQwOTo1OToyMCswMDowMEFT6bIAAAAASUVORK5CYII="></image>
-                                                                </svg>
-                                                            </div>
-                                                            <span class="text">4.9</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-6 border-0">
-                                                    <div class="rev">
-                                                        <div class="cr">
-                                                            <span class="e-text">Trust Pilot</span>
-                                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85px" height="16px" viewBox="0 0 85 16" enable-background="new 0 0 85 16" xml:space="preserve">
-                                                                <image id="image0" width="85" height="16" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAQCAMAAABQvsO3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAe1BMVEUAAAAAtnrc3OYQuoKQ38VQzaPn5+7w+/dAyJug5M3v+/fw8PT////f9u4ww5P7+/w/yJqf480gv4pf0avp6e/k5Ozg4OnA7d6A273u7vP9/f7l5exw1rSw6Nbg9u/09Pfe3uev6NXQ8uaP38T5+fvy8vbr6/Fg0azi4uo4ERjFAAAAAXRSTlMAQObYZgAAAAFiS0dEDIGzUWMAAAAHdElNRQfmCAYJOgLdpML4AAABJUlEQVQ4y7WU0XKCMBBFwYQG2mUFLIW2QpGq+P9f6GpSsq5QOtM2D4h39hwnN0gQihUsB/MjK7d+IPmFVS1blbSqRauWE1EkES2t98yDsJpYTCRaIo/Ses883VpjkBKTikAD3lonmLW3YpZlOaR0zexEQXcbgA19FBaJ6TaFnK5orXPMc1mWL1drUYFd1x1dJLULoHZBZFxQFdb6DfP61YBNKjXuJjYjYQNVjb/iGphh3t59r5q+b3lHMQWN4qUR0yLvdZL56NhptdDmO2QTGkyfb1mAAP3njlunmP3h6K0IiRqMZhNtj9inHDGDSuxTEMwzp/3aW+vLE4+Nn0BNu1cJeqShYwoH3usUs+oOp9FqC2Q1uv+iP4qQB/MMCbv/f7v8rfUMwAIVq3862PcAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDgtMDZUMDk6NTg6MDIrMDA6MDAKdixkAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA4LTA2VDA5OjU4OjAyKzAwOjAweyuU2AAAAABJRU5ErkJggg=="></image>
-                                                            </svg>
-                                                        </div>
-                                                        <span class="text">4.9</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-5 form-col d-none d-md-none d-sm-none d-lg-block">
-                                <form method="POST" action="mails.php">
-                                    <p class="form-text">One step closer to become the best!</p>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Full Name" name="name" required>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" name="email" required>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <input type="numbers" class="form-control" id="exampleInputnumber" placeholder="Phone Number" name="phoneNumbar" required>
-                                    </div>
-                                    <p class="form-second-text">Do you have a manuscript that is ready to publish? </p>
-                                    <div class="mb-3 col-lg-start">
-                                        <select class="btn btn-transparent border w-100 text-start" name="services" required>
-                                            <option class="dropdown-item " value="">Select</option>
-                                            <option class="dropdown-item" value="Action">Action</option>
-                                            <option class="dropdown-item" value="Another action">Another action</option>
-                                            <option class="dropdown-item" value="Something else here">Something else here</option>
-                                        </select>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-dark w-100 form-sub-btn" name="services_btn">Send Message</button>
-
-                                </form>
-                                <!-- <br>
-                                    <p class="section-text text-center">50% off on all services</p> -->
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section>
-                <div class="container-fluid section-margin-y">
-                    <div class="container ">
-                        <div class="row justify-content-between">
-                            <div class="col-lg-5 img-col offers d-none d-lg-block d-sm-none d-md-none">
-                                <img src="assets/girl-working-on-laptop.webp" style="width: 100%;">
-                            </div>
-                            <div class="col-lg-7 d-md-12 d-sm-12 ps-3">
-                                <h6 class="section-subtitle">Mega book writing</h6>
-                                <h1 class="section-title">
-                                    Entrust Our Professionals & Become A Well-Recognized Author
-                                </h1>
-                                <p class="section-text pt-3">
-                                    Writing a book is not a cakewalk for everyone and it requires
-                                    great inspiration, passion and dedication towards the task.
-                                    Writing a book is a process that includes a lot of steps like
-                                    planning, organizing, writing and editing. In today’s time, a
-                                    lot of people are writing books but only a few of them are
-                                    getting recognition and success. If you want to be a
-                                    well-recognized author and want your book to stand out from
-                                    the rest, you need to hire the right book or ghost writing
-                                    services. And that’s where we come into play! We have been in
-                                    the industry for a while and we have the experience that is
-                                    necessary to help you with your book.
-                                </p>
-                                <p class="section-text pt-3">
-                                    Writing a book is not a cakewalk for everyone and it requires
-                                    great inspiration, passion and dedication towards the task.
-                                    Writing a book is a process that includes a lot of steps like
-                                    planning, organizing, writing and editing. In today’s time, a
-                                    lot of people are writing books but only a few of them are
-                                    getting recognition and success. If you want to be a
-                                    well-recognized author and want your book to stand out from
-                                    the rest, you need to hire the right book or ghost writing
-                                    services. And that’s where we come into play! We have been in
-                                    the industry for a while and we have the experience that is
-                                    necessary to help you with your book.
-                                </p>
-                                <div>
-                                    <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
-                                    <!-- <a class="btn btn-theme-outlined " href="#">Live chat</a> -->
-                                    <button class="btn-theme-secondary" data-test-label="live-chat-button" onclick="window.open('https://tawk.to/chat/637cb7e0daff0e1306d8cb72/1gifishks','share-live-chat','width=350, height=520'); return false;">Live chat</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--Section Content-->
-            <section class="section-margin-y">
-                <div class="conatiner-fluid bg-light-section">
-                    <div class="container p-5">
-                        <div class="row p-3">
-
-                            <div class="col-sm-12 col-md-6 col-lg-6">
-                                <h1 class="section-1-heading-h1">We Give Your Book the New Heights it Deserves</h1>
-                                <p class="section-text text-white">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
-                                <p class="section-text text-white">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
-                                <div>
-                                    <a class="btn btn-theme-outlined-light text-white" type="submit" href="contact.php">Get a free quote</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 index-image-section-3 d-none d-sm-none d-lg-block d-md-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-            <!--Services -->
-            <?php include('common/services.php'); ?>
-
-            <!--Banners-->
-            <section class="section-margin-y">
-                <div class="container p-3 d-block banner">
-                    <div class="row align-items-center justify-content-center px-5">
-                        <div class="col-lg-6 col-md-6 col-sm-12 text-lg-start text-sm-start">
-                            <h3>Try it for free</h3>
-                            <p>We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start.</p>
-                            <div>
-                                <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
-                                <!-- <a class="btn btn-theme-outlined" href="">Live chat</a> -->
-                                <button class="btn btn-theme-outlined" data-test-label="live-chat-button" onclick="window.open('https://tawk.to/chat/637cb7e0daff0e1306d8cb72/1gifishks','share-live-chat','width=350, height=520'); return false;">Live chat</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block ps-3 text-end">
-                            <img src="assets/why-choose-us-animated-img1.png " width="400" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--Section Content Reversed-->
-            <section class="section-margin-y">
-                <div class="container-fluid bg-light">
-                    <div class="container p-5">
-                        <div class="row p-3">
-                            <div class="col-sm-12 col-md-6 col-lg-6">
-                                <h1>We Give Your Book the New Heights it Deserves</h1>
-                                <p class="section-text ">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
-                                <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
-                                <div>
-                                    <a class="btn-theme-outlined" href="contact.php">Get a free quote</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 d-none d-sm-none d-lg-block d-md-block text-end">
-                                <img src="assets/book.jpg" width="600" height="500" />
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-            <!-- Numbers -->
-            <section class="percentage-section section-margin-y">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12 col-sm-12 col-md container-percentage">
-                            <h1 class="text-lg-center text-sm-start">We Amplify Your Story with Our Creativity</h1>
-                            <ul class="list-group list-group-horizontal justify-content-center">
-                                <li class="list-item">
-                                    <h1>99%</h1>
-                                    <h6>Customer Retention</h6>
-                                    <img src="./assets/Ellipse 24.png" />
-                                </li>
-                                <li class="list-item ">
-                                    <h1>98%</h1>
-                                    <h6>Customer Satisfaction</h6>
-                                    <img src="./assets/Ellipse 25.png" />
-                                </li>
-                                <li class="list-item">
-                                    <h1>97%</h1>
-                                    <h6>Published Authors</h6>
-                                    <img src="./assets/Ellipse 26.png" />
-                                </li>
-                                <li class="list-item">
-                                    <h1>96% </h1>
-                                    <h6>Positive Feedback</h6>
-                                    <img src="./assets/Ellipse 27.png" />
-                                </li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--Section Content Centered-->
-            <section class="section-margin-y d-none">
-                <div class="container-fluid bg-light">
-                    <div class="container p-5 text-center">
-                        <div class="row p-3">
-                            <div class="col-sm-12 col-md-12 col-lg-12 text-start text-lg-center">
-                                <h1>We Give Your Book the New Heights it Deserves</h1>
-                                <p class="section-text ">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
-
-                            </div>
-                        </div>
-                        <div class="row d-none d-lg-block d-md-block">
-                            <div class="col-lg-12"><img src="assets/reading.jpg" width="650" height="300" />
-                            </div>
-
-                        </div>
-                        <br>
-                    </div>
-                </div>
-
-            </section>
-            <!-- Banner 2 -->
-            <section class="section-margin-y">
-                <div class="container p-3 d-block banner">
-                    <div class="row align-items-center">
-                        <div class="col-12 p-3">
-                            <ul class="list-group list-group-horizontal justify-content-center">
-                                <li class="list-item"><img src="./assets/star1.png" width="100px" /></li>
-                                <li class="list-item"><img src="./assets/star1.png" width="100px" /></li>
-                                <li class="list-item"><img src="./assets/star1.png" width="100px" /></li>
-                            </ul>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-12">
-                                <h1>It’s Time to Get ReadyAnd Take Your <br>Aspirations To a Whole Different Level</h1><br>
-                                <div>
-                                    <a class="btn-theme-primary" type="submit" href="contact.php">Get a free quote</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div><br><br>
-                </div>
-            </section>
-            <!--Offerings-->
-            <section class="section-services section-margin-y">
-                <div class="container ">
-                    <div class="row py-4">
-                        <div class="col-lg-7 col-md-12 col-sm-12">
-                            <h6 class="pt-5">MEGA OFFERS</h6>
-                            <h1>We Capturing Your Story, Exactly As You Want it Captured</h1>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Action Adventure</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> health/Fitness</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Art/Architecture</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Fantasy</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Autobiography</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> History</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Biography</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Novel</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Business/Economics</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Historical Fiction</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Children</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Romance</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Cook Book</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Memoir</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Comic Book</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Picture Book</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Encyclopedia</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Poetry</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Drama</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Political Thiller</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Self Help</a>
-                            <a class="btn services-btn text-white"><img src="assets/Group 22.png" /> Science Fiction</a>
-
-                            <p class="pt-5">Do you think we’re missing something? <a href="contact.php">Contact Us</a></p>
-                        </div>
-
-                        <div class="col-lg-5 col-md-5 pt-5  d-none d-lg-block d-md-block d-sm-none">
-                            <img src="assets/offers.jpg" width="600" height="500" />
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--Process-->
-            <?php include('common/process.php'); ?>
-
-            <!--Section Content 2-->
-            <section class="section-margin-y">
-                <div class="container-fluid">
-                    <div class="container ">
-                        <div class="row p-3">
-                            <div class="col-lg-6 d-none d-sm-none d-lg-block d-md-block">
-                                <img src="assets/section1.jpg" width="500" height="600" />
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6 pt-5">
-                                <h1>We Give Your Book the New Heights it Deserves</h1>
-                                <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers. We customize our marketing plans to promote each individual product because no two things are ever alike, and we want to help our customers succeed from the start. From ghost writing to book editing and its promotion, we provide all-in-one comprehensive book marketing solution.</p>
-                                <p class="section-text">Have you already published your book but are still having a difficult time beating the competition? Don't give up! Our expert book writer and marketing experts can help make sure that your book gets noticed! Using successful marketing strategies, we can help you increase sales and get the attention of more potential readers.</p>
-                                <div>
-                                    <a class="btn-theme-outlined text-black" href="contact.php">Get a free quote</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- Banner 2 -->
-            <section class="section-margin-y">
-                <div class="container  d-block banner">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <h6 class=" my-4 text-lg-center text-start">Get started for free</h6>
-                            <h1 class=" my-4 text-lg-center text-start">Did You Dream of Becoming the Next Bestseller? We Will Make Your Dreams Come True</h1>
-                            <p class=" my-4 justify-text text-lg-center text-start">We are a full-service book publishing agency that has helped authors from all over the world achieve their publishing goals. If you have a story that you’d like to transform into e-book, you’ve just landed the right place.</p>
-                            <div class="text-lg-center text-start my-4">
-                                <a class="btn-theme-primary " href="contact.php">Get a free quote</a>
-                            </div>
-                            <h6 class=" my-4 text-lg-center text-start">Join over 200+ people already using megabookwriting</h6>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-12 p-3">
-                            <ul class="list-group list-group-horizontal justify-content-center">
-                                <li class="list-item"><img src="./assets/star1.png" width="100px" /></li>
-                                <li class="list-item"><img src="./assets/star1.png" width="100px" /></li>
-                                <li class="list-item"><img src="./assets/star1.png" width="100px" /></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
-
-            <!--Testimonials-->
-
-            <!--FAQS-->
-            <section class="section-margin-y">
-                <div class="container">
+        <div class="content-wrapper">
+            <!-- /header -->
+            <?php include 'assets/common/header.php'; ?>
+            <!-- /header -->
+            <section class="wrapper image-wrapper bg-cover bg-image bg-xs-block bg-gray" data-image-src="./assets/img/photos/bg14.png">
+                <div class="container pt-12 pb-15 py-sm-12 py-xxl-15">
                     <div class="row">
-
-                        <div class="row justify-content-center">
-                            <div class="col-lg-4">
-                                <img src="assets/faq-girl.jpg" width="100%" />
+                        <div class="col-sm-12 col-xxl-7 col-lg-7 text-start">
+                            <h2 class="display-1 fs-56 mb-4 mt-0 mt-lg-5 ls-xs pe-xl-5 pe-xxl-0 text-light">We bring solutions to make life <span class="typer text-light" data-loop="false" data-delay="100" data-words="Easy,Simple,Secure">
+                                </span><span class="cursor text-yellow" data-owner="typer"></h2>
+                            <p class="lead fs-23 lh-sm mb-7 pe-lg-5 pe-xl-5 pe-xxl-0 text-light">We are a creative company that focuses on long term relationships with customers.</p>
+                            <div>
+                                <a href="#" class="btn btn-lg btn-primary rounded">Get Started</a>
+                                <a href="#" class="btn btn-lg btn-outline-light rounded">Live Chat</a>
                             </div>
-                            <div class="col-lg-8">
-                                <div class="text-start">2,157 people have said how good is megawriting</div>
-                                <h1 class="text-start">Frequently Asked Questions</h1>
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                Question #1
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                Question #2
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingThree">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                Question #3
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                        </div>
-                                    </div>
-
+                            <div class="row align-items-center counter-wrapper gy-6 my-3">
+                                <div class="col-md-6">
+                                    <h3 class="counter counter-lg mb-1 text-light">99.7%</h3>
+                                    <h6 class="fs-17 mb-1 text-light">Customer Satisfaction</h6>
+                                    <span class="ratings five"></span>
                                 </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <!--Contact -->
-            <section class="hero-section section-margin-y">
-                <div class="container-fluid">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7 col-md-12 col-sm-12">
-                                <h1 class="hero-text">We would love to hear from you,<br>Get in touch👋</h1>
-                                <p class="hero-para mt-4">We’ve established a huge portfolio over the years and have delivered flawless projects to our valued customers. Every ghost writer in our agency stands out for being creative, intellectual, skilled, and experienced, Check out our previous work!</p>
-                                <div class="card border-0"></div>
-                                <div class="card-body" style="background-color:#efefef;">
-                                    <p class="section-text"><span style="font-size:18px; font-weight:700">"</span>Some quick example text to build on the card title and make up the bulk of the card's content.“We bring in the best ghost writing experts who work on your project and make sure it is finished to perfection. With our finest services you are guaranteed to have a book of the highest quality.<span style="font-size:18px; font-weight:700">"</span></p>
-                                    <p class="section-text"><span style="font-weight:600">John Doe</span> <br><span class="fs-6">CEO at ABC</span>
+                                <!--/column -->
+                                <div class="col-md-6">
+                                    <h3 class="counter counter-lg mb-1 text-light">4x</h3>
+                                    <h6 class="fs-17 mb-1 text-light">New Visitors</h6>
+                                    <span class="ratings five"></span>
                                 </div>
-                            </div>
-                            <div class="col-lg-5 col-md-12 col-sm-12 form-col">
-                                <?php include('contact-form.php') ?>
-
+                                <!--/column -->
                             </div>
                         </div>
-
+                        <!--/column -->
+                        <div class="col-sm-12 col-xxl-5 col-lg-5 text-start">
+                            <?php include 'assets/common/form.php'; ?>
+                        </div>
                     </div>
 
+                    <!-- /.row -->
                 </div>
+                <!-- /.container -->
             </section>
+            <section class="wrapper bg-light">
+                <div class="container py-15 py-md-17">
+                    <div class="row text-center">
+                        <div class="col-md-10 col-lg-9 col-xxl-8 mx-auto">
+                            <h2 class="fs-15 text-uppercase text-muted mb-3">What We Do?</h2>
+                            <h3 class="display-3 ls-sm mb-9 px-xl-11">The service we offer is specifically designed to meet your needs.</h3>
+                        </div>
+                        <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                    <div class="row gx-lg-8 gx-xl-12 gy-8">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <img src="./assets/img/icons/lineal/telephone-3.svg" class="svg-inject icon-svg icon-svg-md text-blue me-5 mt-1" alt="" />
+                                </div>
+                                <div>
+                                    <h4 class="fs-20 ls-sm">24/7 Support</h4>
+                                    <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <img src="./assets/img/icons/lineal/shield.svg" class="svg-inject icon-svg icon-svg-md text-yellow me-5 mt-1" alt="" />
+                                </div>
+                                <div>
+                                    <h4 class="fs-20 ls-sm">Secure Payments</h4>
+                                    <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <img src="./assets/img/icons/lineal/cloud-computing-2.svg" class="svg-inject icon-svg icon-svg-md text-orange me-5" alt="" />
+                                </div>
+                                <div>
+                                    <h4 class="fs-20 ls-sm">Daily Updates</h4>
+                                    <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <img src="./assets/img/icons/lineal/analytics.svg" class="svg-inject icon-svg icon-svg-md text-pink me-5" alt="" />
+                                </div>
+                                <div>
+                                    <h4 class="fs-20 ls-sm">Market Research</h4>
+                                    <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <img src="./assets/img/icons/lineal/chat-2.svg" class="svg-inject icon-svg icon-svg-md text-green me-5 mt-1" alt="" />
+                                </div>
+                                <div>
+                                    <h4 class="fs-20 ls-sm">Social Engagement</h4>
+                                    <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <img src="./assets/img/icons/lineal/megaphone.svg" class="svg-inject icon-svg icon-svg-md text-purple me-5 mt-1" alt="" />
+                                </div>
+                                <div>
+                                    <h4 class="fs-20 ls-sm">Content Marketing</h4>
+                                    <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="wrapper bg-light">
+                <div class="container py-14 py-md-16">
+                    <div class="row align-items-center gy-8">
+                        <div class="col-lg-7 text-center text-lg-start">
+                            <h2 class="fs-16 text-uppercase text-muted mb-3">Save Time and Money</h2>
+                            <h3 class="display-3 mb-0 pe-xl-10 pe-xxl-15">Save your time and money by choosing our <span class="underline-3 style-2 yellow">professional</span> team.</h3>
+                        </div>
+                        <!-- /column -->
+                        <div class="col-lg-5">
+                            <div class="row gy-6 text-center">
+                                <div class="col-md-6">
+                                    <div class="progressbar semi-circle fuchsia" data-value="95"></div>
+                                    <h4 class="mb-0">Customer Satisfaction</h4>
+                                </div>
+                                <!-- /column -->
+                                <div class="col-md-6">
+                                    <div class="progressbar semi-circle orange" data-value="80"></div>
+                                    <h4 class="mb-0">Increased Revenue</h4>
+                                </div>
+                                <!-- /column -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="wrapper bg-gray position-relative min-vh-60 d-lg-flex align-items-center">
+                <div class="col-lg-6 position-lg-absolute top-0 start-0 image-wrapper bg-image bg-cover h-100" data-image-src="./assets/img/photos/bg38.jpg">
+                    <div class="divider text-gray divider-v-end d-none d-lg-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 1200">
+                            <g />
+                            <g>
+                                <g>
+                                    <polygon fill="currentColor" points="48 0 0 0 48 1200 54 1200 54 0 48 0" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <!--/column -->
+                <div class="container">
+                    <div class="row gx-0">
+                        <div class="col-lg-6 ms-auto">
+                            <div class="pt-13 pb-15 pb-md-17 py-lg-16 pe-lg-15">
+                                <h2 class="fs-16 text-uppercase text-muted mb-3">Our Solutions</h2>
+                                <h3 class="display-3 ls-sm mb-5">Just sit & relax while we take care of your business needs.</h3>
+                                <p class="mb-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna.</p>
+                                <div class="row align-items-center counter-wrapper gy-6">
+                                    <div class="col-md-6">
+                                        <h3 class="counter counter-lg mb-1">99.7%</h3>
+                                        <h6 class="fs-17 ls-sm mb-1">Customer Satisfaction</h6>
+                                        <span class="ratings five"></span>
+                                    </div>
+                                    <!--/column -->
+                                    <div class="col-md-6">
+                                        <h3 class="counter counter-lg mb-1">4x</h3>
+                                        <h6 class="fs-17 ls-sm mb-1">New Visitors</h6>
+                                        <span class="ratings five"></span>
+                                    </div>
+                                    <!--/column -->
+                                </div>
+                                <!--/.row -->
+                            </div>
+                        </div>
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="wrapper bg-light">
+                <div class="container py-14 py-md-16">
+                    <div class="row gx-lg-8 gx-xl-12 gy-6 px-xl-5">
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <div class="icon btn btn-circle pe-none btn-primary me-4"> <i class="uil uil-phone-volume"></i> </div>
+                                </div>
+                                <div>
+                                    <h4>24/7 Support</h4>
+                                    <p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.</p>
+                                    <a href="#" class="more hover">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <div class="icon btn btn-circle pe-none btn-primary me-4"> <i class="uil uil-laptop-cloud"></i> </div>
+                                </div>
+                                <div>
+                                    <h4>Daily Updates</h4>
+                                    <p class="mb-2">Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere consectetur.</p>
+                                    <a href="#" class="more hover">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <div class="icon btn btn-circle pe-none btn-primary me-4"> <i class="uil uil-chart-line"></i> </div>
+                                </div>
+                                <div>
+                                    <h4>Market Research</h4>
+                                    <p class="mb-2">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.</p>
+                                    <a href="#" class="more hover">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="wrapper bg-gray position-relative min-vh-60 d-lg-flex align-items-center">
+                <div class="col-lg-6 position-lg-absolute top-0 end-0 image-wrapper bg-image bg-cover h-100" data-image-src="./assets/img/photos/bg39.jpg">
+                    <div class="divider text-gray divider-v-start d-none d-lg-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 1200">
+                            <g />
+                            <g>
+                                <g>
+                                    <polygon fill="currentColor" points="6 0 0 0 0 1200 6 1200 54 0 6 0" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <!--/column -->
+                <div class="container">
+                    <div class="row gx-0">
+                        <div class="col-lg-6">
+                            <div class="pt-13 pb-15 pb-md-17 py-lg-16 pe-lg-15">
+                                <h2 class="fs-16 text-uppercase text-muted mb-3">Our Solutions</h2>
+                                <h3 class="display-3 ls-sm mb-5">Just sit & relax while we take care of your business needs.</h3>
+                                <p class="mb-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna.</p>
+                                <div class="row align-items-center counter-wrapper gy-6">
+                                    <div class="col-md-6">
+                                        <h3 class="counter counter-lg mb-1">99.7%</h3>
+                                        <h6 class="fs-17 ls-sm mb-1">Customer Satisfaction</h6>
+                                        <span class="ratings five"></span>
+                                    </div>
+                                    <!--/column -->
+                                    <div class="col-md-6">
+                                        <h3 class="counter counter-lg mb-1">4x</h3>
+                                        <h6 class="fs-17 ls-sm mb-1">New Visitors</h6>
+                                        <span class="ratings five"></span>
+                                    </div>
+                                    <!--/column -->
+                                </div>
+                                <!--/.row -->
+                            </div>
+                        </div>
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="wrapper bg-light">
+                <div class="container py-14 py-md-16">
+                    <h2 class="display-4 mb-3">How We Do It?</h2>
+                    <p class="lead fs-lg mb-8">We make your spending <span class="underline">stress-free</span> for you to have the perfect control.</p>
+                    <div class="row gx-lg-8 gx-xl-12 gy-6 process-wrapper line">
+                        <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none mb-4"><span class="number">01</span></span>
+                            <h4 class="mb-1">Concept</h4>
+                            <p class="mb-0">Nulla vitae elit libero elit non porta gravida eget metus cras. Aenean eu leo quam. Pellentesque ornare.</p>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-primary pe-none mb-4"><span class="number">02</span></span>
+                            <h4 class="mb-1">Prepare</h4>
+                            <p class="mb-0">Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.</p>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none mb-4"><span class="number">03</span></span>
+                            <h4 class="mb-1">Retouch</h4>
+                            <p class="mb-0">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero.</p>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none mb-4"><span class="number">04</span></span>
+                            <h4 class="mb-1">Finalize</h4>
+                            <p class="mb-0">Integer posuere erat, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo.</p>
+                        </div>
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="wrapper bg-white">
+                <div class="container py-15 py-md-17">
+                    <div class="row gy-10 gy-sm-13 gx-md-8 gx-xl-12 align-items-center mb-10 mb-md-12">
+                        <div class="col-lg-6">
+                            <div class="row gx-md-5 gy-5">
+                                <div class="col-md-6">
+                                    <figure class="rounded"><img src="./assets/img/photos/g14.jpg" srcset="./assets/img/photos/g14@2x.jpg 2x" alt=""></figure>
+                                </div>
+                                <!--/column -->
+                                <div class="col-md-6 align-self-end">
+                                    <figure class="rounded"><img src="./assets/img/photos/g15.jpg" srcset="./assets/img/photos/g15@2x.jpg 2x" alt=""></figure>
+                                </div>
+                                <!--/column -->
+                                <div class="col-12">
+                                    <figure class="rounded mx-md-5"><img src="./assets/img/photos/g16.jpg" srcset="./assets/img/photos/g16@2x.jpg 2x" alt=""></figure>
+                                </div>
+                                <!--/column -->
+                            </div>
+                            <!--/.row -->
+                        </div>
+                        <!--/column -->
+                        <div class="col-lg-6">
+                            <h2 class="fs-15 text-uppercase text-muted mb-3">Who Are We?</h2>
+                            <h3 class="display-3 ls-sm mb-5">Company that believes in the power of creative strategy.</h3>
+                            <p class="mb-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed.</p>
+                            <div class="row gy-3 gx-xl-8">
+                                <div class="col-xl-6">
+                                    <ul class="icon-list bullet-primary mb-0">
+                                        <li><span><i class="uil uil-check"></i></span><span>Aenean eu leo quam ornare curabitur blandit tempus.</span></li>
+                                        <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Nullam quis risus eget urna mollis ornare donec elit.</span></li>
+                                    </ul>
+                                </div>
+                                <!--/column -->
+                                <div class="col-xl-6">
+                                    <ul class="icon-list bullet-primary mb-0">
+                                        <li><span><i class="uil uil-check"></i></span><span>Etiam porta sem malesuada magna mollis euismod.</span></li>
+                                        <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Fermentum massa vivamus faucibus amet euismod.</span></li>
+                                    </ul>
+                                </div>
+                                <!--/column -->
+                            </div>
+                            <!--/.row -->
+                        </div>
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                    <div class="row gx-lg-8 gx-xl-12 gy-6 mb-15 mb-md-18">
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <img src="./assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-md text-blue me-5" alt="" />
+                                </div>
+                                <div>
+                                    <h4 class="fs-20 ls-sm">Our Vision</h4>
+                                    <p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <img src="./assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-md text-green me-5" alt="" />
+                                </div>
+                                <div>
+                                    <h4 class="fs-20 ls-sm">Our Mission</h4>
+                                    <p class="mb-2">Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <img src="./assets/img/icons/lineal/loyalty.svg" class="svg-inject icon-svg icon-svg-md text-yellow me-5" alt="" />
+                                </div>
+                                <div>
+                                    <h4 class="fs-20 ls-sm">Our Values</h4>
+                                    <p class="mb-2">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                    </div>
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="wrapper bg-light">
+                <div class="container py-14 py-md-16">
+                    <div class="row gx-lg-8 gx-xl-12 gy-12 align-items-center">
+                        <div class="col-lg-6 position-relative">
+                            <div class="btn btn-circle btn-primary pe-none position-absolute counter-wrapper flex-column d-none d-md-flex" style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: 170px; height: 170px;">
+                                <h3 class="text-white mb-1 mt-n2"><span class="counter counter-lg">20+</span></h3>
+                                <p>Year Experience</p>
+                            </div>
+                            <div class="row gx-md-5 gy-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="row gx-md-5 gy-5">
+                                        <div class="col-md-10 offset-md-2">
+                                            <figure class="rounded"><img src="./assets/img/photos/ab1.jpg" srcset="./assets/img/photos/ab1@2x.jpg 2x" alt=""></figure>
+                                        </div>
+                                        <!--/column -->
+                                        <div class="col-md-12">
+                                            <figure class="rounded"><img src="./assets/img/photos/ab2.jpg" srcset="./assets/img/photos/ab2@2x.jpg 2x" alt=""></figure>
+                                        </div>
+                                        <!--/column -->
+                                    </div>
+                                    <!--/.row -->
+                                </div>
+                                <!--/column -->
+                                <div class="col-md-6">
+                                    <figure class="rounded"><img src="./assets/img/photos/ab3.jpg" srcset="./assets/img/photos/ab3@2x.jpg 2x" alt=""></figure>
+                                </div>
+                                <!--/column -->
+                            </div>
+                            <!--/.row -->
+                        </div>
+                        <!--/column -->
+                        <div class="col-lg-6">
+                            <img src="./assets/img/icons/lineal/handshake.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
+                            <h3 class="display-5 mb-5">We are a creative company that focuses on establishing long-term relationships with customers.</h3>
+                            <p class="mb-7">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula.</p>
+                            <div class="row counter-wrapper gy-6">
+                                <div class="col-md-4">
+                                    <h3 class="counter text-primary">7518</h3>
+                                    <p>Completed Projects</p>
+                                </div>
+                                <!--/column -->
+                                <div class="col-md-4">
+                                    <h3 class="counter text-primary">3472</h3>
+                                    <p>Satisfied Customers</p>
+                                </div>
+                                <!--/column -->
+                                <div class="col-md-4">
+                                    <h3 class="counter text-primary">2184</h3>
+                                    <p>Expert Employees</p>
+                                </div>
+                                <!--/column -->
+                            </div>
+                            <!--/.row -->
+                        </div>
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="wrapper bg-light">
+                <div class="container py-14 py-md-16">
+                    <div class="row">
+                        <div class="col-xl-10 mx-auto">
+                            <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400" data-image-src="./assets/img/photos/bg3.jpg">
+                                <div class="card-body p-6 p-md-11 d-lg-flex flex-row align-items-lg-center justify-content-md-between text-center text-lg-start">
+                                    <h3 class="display-6 mb-6 mb-lg-0 pe-lg-10 pe-xl-5 pe-xxl-18 text-white">We are trusted by over 5000+ clients. Join them by using our services and grow your business.</h3>
+                                    <a href="#" class="btn btn-white rounded-pill mb-0 text-nowrap">Join Us</a>
+                                </div>
+                                <!--/.card-body -->
+                            </div>
+                            <!--/.card -->
+                        </div>
+                        <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /section -->
+            <section class="wrapper bg-light">
+                <div class="container py-14 py-md-16">
+                    <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                        <div class="col-lg-6 position-relative order-lg-2">
+                            <div class="shape bg-dot primary rellax w-16 h-20" data-rellax-speed="1" style="top: 3rem; left: 5.5rem"></div>
+                            <div class="overlap-grid overlap-grid-2">
+                                <div class="item">
+                                    <figure class="rounded shadow"><img src="./assets/img/photos/about2.jpg" srcset="./assets/img/photos/about2@2x.jpg 2x" alt=""></figure>
+                                </div>
+                                <div class="item">
+                                    <figure class="rounded shadow"><img src="./assets/img/photos/about3.jpg" srcset="./assets/img/photos/about3@2x.jpg 2x" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                        <div class="col-lg-6">
+                            <img src="./assets/img/icons/lineal/megaphone.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
+                            <h2 class="display-4 mb-3">Who Are We?</h2>
+                            <p class="lead fs-lg">We are a digital and branding company that believes in the power of creative strategy and along with great design.</p>
+                            <p class="mb-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                            <div class="row gy-3 gx-xl-8">
+                                <div class="col-xl-6">
+                                    <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+                                        <li><span><i class="uil uil-check"></i></span><span>Aenean eu leo quam ornare curabitur blandit tempus.</span></li>
+                                        <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Nullam quis risus eget urna mollis ornare donec elit.</span></li>
+                                    </ul>
+                                </div>
+                                <!--/column -->
+                                <div class="col-xl-6">
+                                    <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+                                        <li><span><i class="uil uil-check"></i></span><span>Etiam porta sem malesuada magna mollis euismod.</span></li>
+                                        <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Fermentum massa vivamus faucibus amet euismod.</span></li>
+                                    </ul>
+                                </div>
+                                <!--/column -->
+                            </div>
+                            <!--/.row -->
+                        </div>
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="wrapper bg-light">
+                <div class="container py-14 py-md-16">
+                    <div class="row gx-xl-12 gy-10">
+                        <div class="col-xl-4">
+                            <h2 class="display-4 mt-10 mb-3">Our Community</h2>
+                            <p class="lead fs-lg mb-6">Customer satisfaction is our major goal. See what our clients are saying about our services.</p>
+                            <a href="#" class="btn btn-primary rounded-pill">All Testimonials</a>
+                        </div>
+                        <!-- /column -->
+                        <div class="col-xl-8">
+                            <div class="position-relative">
+                                <div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16" data-rellax-speed="1" style="top: -0.7rem; right: -1.7rem;"></div>
+                                <div class="shape rounded-circle bg-line red rellax w-16 h-16" data-rellax-speed="1" style="bottom: -0.5rem; left: -1.4rem;"></div>
+                                <div class="swiper-container dots-closer mb-6" data-margin="0" data-dots="true" data-items-md="2" data-items-xs="1">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="item-inner">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <blockquote class="icon mb-0">
+                                                                <p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis sed posuere.”</p>
+                                                                <div class="blockquote-details">
+                                                                    <img class="rounded-circle w-12" src="./assets/img/avatars/te1.jpg" srcset="./assets/img/avatars/te1@2x.jpg 2x" alt="" />
+                                                                    <div class="info">
+                                                                        <h5 class="mb-1">Coriss Ambady</h5>
+                                                                        <p class="mb-0">Financial Analyst</p>
+                                                                    </div>
+                                                                </div>
+                                                            </blockquote>
+                                                        </div>
+                                                        <!--/.card-body -->
+                                                    </div>
+                                                    <!-- /.card -->
+                                                </div>
+                                                <!-- /.item-inner -->
+                                            </div>
+                                            <!--/.swiper-slide -->
+                                            <div class="swiper-slide">
+                                                <div class="item-inner">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <blockquote class="icon mb-0">
+                                                                <p>“Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus.”</p>
+                                                                <div class="blockquote-details">
+                                                                    <img class="rounded-circle w-12" src="./assets/img/avatars/te2.jpg" srcset="./assets/img/avatars/te2@2x.jpg 2x" alt="" />
+                                                                    <div class="info">
+                                                                        <h5 class="mb-1">Cory Zamora</h5>
+                                                                        <p class="mb-0">Marketing Specialist</p>
+                                                                    </div>
+                                                                </div>
+                                                            </blockquote>
+                                                        </div>
+                                                        <!--/.card-body -->
+                                                    </div>
+                                                    <!-- /.card -->
+                                                </div>
+                                                <!-- /.item-inner -->
+                                            </div>
+                                            <!--/.swiper-slide -->
+                                            <div class="swiper-slide">
+                                                <div class="item-inner">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <blockquote class="icon mb-0">
+                                                                <p>“Nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida.”</p>
+                                                                <div class="blockquote-details">
+                                                                    <img class="rounded-circle w-12" src="./assets/img/avatars/te3.jpg" srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="" />
+                                                                    <div class="info">
+                                                                        <h5 class="mb-1">Nikolas Brooten</h5>
+                                                                        <p class="mb-0">Sales Manager</p>
+                                                                    </div>
+                                                                </div>
+                                                            </blockquote>
+                                                        </div>
+                                                        <!--/.card-body -->
+                                                    </div>
+                                                    <!-- /.card -->
+                                                </div>
+                                                <!-- /.item-inner -->
+                                            </div>
+                                            <!--/.swiper-slide -->
+                                            <div class="swiper-slide">
+                                                <div class="item-inner">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <blockquote class="icon mb-0">
+                                                                <p>“Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus posuere consectetur.”</p>
+                                                                <div class="blockquote-details">
+                                                                    <img class="rounded-circle w-12" src="./assets/img/avatars/te4.jpg" srcset="./assets/img/avatars/te4@2x.jpg 2x" alt="" />
+                                                                    <div class="info">
+                                                                        <h5 class="mb-1">Coriss Ambady</h5>
+                                                                        <p class="mb-0">Financial Analyst</p>
+                                                                    </div>
+                                                                </div>
+                                                            </blockquote>
+                                                        </div>
+                                                        <!--/.card-body -->
+                                                    </div>
+                                                    <!-- /.card -->
+                                                </div>
+                                                <!-- /.item-inner -->
+                                            </div>
+                                            <!--/.swiper-slide -->
+                                            <div class="swiper-slide">
+                                                <div class="item-inner">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <blockquote class="icon mb-0">
+                                                                <p>“Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque.”</p>
+                                                                <div class="blockquote-details">
+                                                                    <img class="rounded-circle w-12" src="./assets/img/avatars/te5.jpg" srcset="./assets/img/avatars/te5@2x.jpg 2x" alt="" />
+                                                                    <div class="info">
+                                                                        <h5 class="mb-1">Jackie Sanders</h5>
+                                                                        <p class="mb-0">Investment Planner</p>
+                                                                    </div>
+                                                                </div>
+                                                            </blockquote>
+                                                        </div>
+                                                        <!--/.card-body -->
+                                                    </div>
+                                                    <!-- /.card -->
+                                                </div>
+                                                <!-- /.item-inner -->
+                                            </div>
+                                            <!--/.swiper-slide -->
+                                            <div class="swiper-slide">
+                                                <div class="item-inner">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <blockquote class="icon mb-0">
+                                                                <p>“Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna.”</p>
+                                                                <div class="blockquote-details">
+                                                                    <img class="rounded-circle w-12" src="./assets/img/avatars/te6.jpg" srcset="./assets/img/avatars/te6@2x.jpg 2x" alt="" />
+                                                                    <div class="info">
+                                                                        <h5 class="mb-1">Laura Widerski</h5>
+                                                                        <p class="mb-0">Sales Specialist</p>
+                                                                    </div>
+                                                                </div>
+                                                            </blockquote>
+                                                        </div>
+                                                        <!--/.card-body -->
+                                                    </div>
+                                                    <!-- /.card -->
+                                                </div>
+                                                <!-- /.item-inner -->
+                                            </div>
+                                            <!--/.swiper-slide -->
+                                        </div>
+                                        <!--/.swiper-wrapper -->
+                                    </div>
+                                    <!-- /.swiper -->
+                                </div>
+                                <!-- /.swiper-container -->
+                            </div>
+                            <!-- /.position-relative -->
+                        </div>
+                        <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="wrapper bg-light">
+                <div class="container py-14 py-md-16">
+                    <div class="card bg-soft-primary rounded-4">
+                        <div class="card-body p-md-10 p-xl-11">
+                            <div class="row gx-lg-8 gx-xl-12 gy-10">
+                                <div class="col-lg-6">
+                                    <h3 class="display-4 mb-4">Frequently Asked Questions</h3>
+                                    <p class="lead fs-lg mb-0">If you don't see an answer to your question, you can send us an email from our contact form.</p>
+                                </div>
+                                <!--/column -->
+                                <div class="col-lg-6">
+                                    <div class="accordion accordion-wrapper" id="accordionExample">
+                                        <div class="card plain accordion-item">
+                                            <div class="card-header" id="headingOne">
+                                                <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How do I get my subscription receipt?</button>
+                                            </div>
+                                            <!--/.card-header -->
+                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                                </div>
+                                                <!--/.card-body -->
+                                            </div>
+                                            <!--/.accordion-collapse -->
+                                        </div>
+                                        <!--/.accordion-item -->
+                                        <div class="card plain accordion-item">
+                                            <div class="card-header" id="headingTwo">
+                                                <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Are there any discounts for people in need?</button>
+                                            </div>
+                                            <!--/.card-header -->
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                                </div>
+                                                <!--/.card-body -->
+                                            </div>
+                                            <!--/.accordion-collapse -->
+                                        </div>
+                                        <!--/.accordion-item -->
+                                        <div class="card plain accordion-item">
+                                            <div class="card-header" id="headingThree">
+                                                <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Do you offer a free trial edit?</button>
+                                            </div>
+                                            <!--/.card-header -->
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                                </div>
+                                                <!--/.card-body -->
+                                            </div>
+                                            <!--/.accordion-collapse -->
+                                        </div>
+                                        <!--/.accordion-item -->
+                                        <div class="card plain accordion-item">
+                                            <div class="card-header" id="headingFour">
+                                                <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">How do I reset my Account password?</button>
+                                            </div>
+                                            <!--/.card-header -->
+                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                                </div>
+                                                <!--/.card-body -->
+                                            </div>
+                                            <!--/.accordion-collapse -->
+                                        </div>
+
+                                        <!--/.accordion-item -->
+                                    </div>
+                                    <!--/.accordion -->
+                                </div>
+                                <!--/column -->
+                            </div>
+                            <!--/.row -->
+                        </div>
+                        <!--/.card-body -->
+                    </div>
+                    <!--/.card -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="wrapper bg-light">
+                <div class="container py-14 py-md-16 text-center">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-7 col-xl-7 mx-auto text-center">
+                            <img src="./assets/img/icons/lineal/puzzle-2.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
+                            <h2 class="display-4 mb-3">Join Our Community</h2>
+                            <p class="lead fs-lg mb-6 px-xl-10 px-xxl-15">We are trusted by over 5000+ clients. Join them by using our services and grow your business.</p>
+                            <a href="#" class="btn btn-primary rounded">Join Us</a>
+                        </div>
+                        <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /section -->
+            <!-- /section -->
+
         </div>
-    </main>
-    <?php include('common/footer.php'); ?>
+    <!-- /.content-wrapper -->
+    <!-- /footer -->
+    <?php include 'assets/common/footer.php'; ?>
+    <!-- /footer -->
 </body>
+
+</html>
